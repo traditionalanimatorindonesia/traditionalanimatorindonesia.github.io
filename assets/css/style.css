@@ -1,4 +1,4 @@
-h1,h2,h3{margin-bottom:0px;}
+h1,h2,h3,ul{margin-bottom:0px;}
 html{-webkit-text-size-adjust:none;font-family: Arial, sans-serif;}
 .social-icon{width:100px;height:100px;}
 .tableA{background-color:lightgray;text-align:center;width:250px;padding-bottom:10px;border-spacing:0;}
@@ -14,4 +14,37 @@ button:hover{background:lightgray}
 #child {
   display: inline-block; 
 
+}
+
+.table_component {
+    width: 100%;
+}
+
+.table_component table {
+    border: 1px solid #dededf;
+    height: auto;
+    width: auto;
+    table-layout: auto;
+    border-collapse: collapse;
+    border-spacing: 1px;
+    text-align: left;
+}
+
+.table_component caption {
+    caption-side: top;
+    text-align: left;
+}
+
+.table_component th {
+    border: 1px solid #dededf;
+    background-color: #eceff1;
+    color: #000000;
+    padding: 5px;
+}
+
+.table_component td {
+    border: 1px solid #dededf;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 5px;
 }
