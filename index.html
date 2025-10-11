@@ -1,90 +1,56 @@
 <html>
-
-<head>
+    <head>
     <meta charset="UTF-8">
+    <base target="_blank">
+    <link rel="stylesheet" href="../../assets/css/style.css"> 
     <meta property="og:title" content="Traditional Animator Indonesia" />
     <meta property="og:description" content="Traditional Animator Indonesia adalah online group dimana kita memposting karya Animasi hand-drawn (Frame by Frame) Digital atau Tradisional." />
     <meta property="og:image" content="https://traditionalanimatorindonesia.github.io/assets/img/icon.png" />
-    <base target="_blank">
-    <link rel="stylesheet" href="assets/css/style.css"> 
-    <script src="assets/javascript/jquery.js"></script>
+    <script src="../../assets/javascript/jquery.js"></script>
+   </head>
+  <body>
+    <style>li{list-style-type:decimal;}</style>
+    <h2>Cara Export Animasi Grease Pencil ke Krita</h2>
+    <i>ditulis oleh Sadewoo</i><br>
 
-</head>
-
-<body>
-
-    <center>
-        <img width="90%" src="assets/img/banner.png">
-        <br>
-        <b>Traditional Animator Indonesia</b> adalah online group dimana kita memposting karya Animasi hand-drawn (Frame by Frame) Digital atau Tradisional.
-        <br>
-        <br>
-
-        <div id='wrapper'>
-            <div id='child'>
-                <table class="tableA">
-                    <th>Join the Group : </th>
-                </table>
-                <table class="tableA">
-                    <tr>
-                        <td>
-                            <a href="https://www.facebook.com/groups/traditionalanimatorindonesia/">
-                                <img class="social-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/640px-Facebook_f_logo_%282019%29.svg.png"></a>
-                        </td>
-                        <td>
-                            <a href="https://discord.gg/4TMUsSzZyV ">
-                                <img class="social-icon" src="https://upload.wikimedia.org/wikipedia/fr/4/4f/Discord_Logo_sans_texte.svg"></a>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-
-            <div id='child'>
-                <table class="tableA">
-                    <th>Social Media : </th>
-                </table>
-                <table class="tableA">
-                    <tr>
-                        <td>
-                            <a href="https://www.youtube.com/@TraditionalAnimatorIndonesia">
-                                <img class="social-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/YouTube_social_red_squircle_%282024%29.svg/1024px-YouTube_social_red_squircle_%282024%29.svg.png"></a>
-                        </td>
-                        <td>
-                            <a href="https://www.instagram.com/traditionalanimatorindonesia/">
-                                <img class="social-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/640px-Instagram-Icon.png"></a>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-
-        <h1>Halaman lainnya : </h1>
-        <table style="width:30%;">
-            <tr>
-                <td>
-                    <a href="pages/Downloads/index.html">
-                        <button>Download files animasi</button>
-                    </a>
-                    <br>
-                    <a href="pages/ListSoftware/index.html">
-                        <button>Kumpulan Software Animasi Gratis & Tutorial</button>
-                    </a>
-                    <br>
-                    <a href="pages/ListTool/index.html">
-                        <button>Kumpulan Tool Gratis</button>
-                    </a>
-                    <br>
-                    <a href="https://docs.google.com/spreadsheets/d/1eR2oAXOuflr8CZeGoz3JTrsgNj3KuefbdXJOmNtjEVM/edit?gid=0#gid=0">
-                        <button>Animation/VFX/Game Industry Job Postings</button>
-                    </a>
-                    <br>
-
-
-                    <!--<a href="pages/ListStudioAnime/index.html"> Studio anime yang ada di Indonesia</a><br>-->
-                </td>
-            </tr>
-        </table>
-    </center>
-</body>
-
+      <li>Software yang dipakai <a href="https://download.blender.org/release/">Blender v4.5</a> and <a href="https://krita.org/en/download/">Krita v5</a></li>
+        
+      <li>File dan Addon/Plugin yang perlu di download & install terlebih dahulu :<br>
+          ╰┈➤SakugaGP Addon (Install di Blender) : <a href="assets/sakugagp_1.1.4.zip">Direct</a> <a href="https://sadewoo.gumroad.com/l/SakugaGP">Gumroad</a> <br>
+          ╰┈➤Camera Overscan Addon (Install di Blender) : <a href="https://projects.blender.org/pioverfour/camera_overscan/archive/main.zip">Direct</a><br>
+          ╰┈➤SakugaKR (Install di Krita) : <a href="https://github.com/spikysaurus/KRITA-SakugaKR/archive/refs/heads/main.zip">Direct</a><br>
+          ╰┈➤File Blender yang berisi template animasi Krita : <a href="assets/BlenderToKrita.7z">Direct</a>
+       </li>
+      <li>Buka file Blender templatenya <br>
+        <img src="https://64.media.tumblr.com/219c1d9392b0149e332b44ad3f26e8c7/feee98d2c76d78be-69/s500x750/b49456e08416cc038b01cb4d28b8dd9c1498c3e2.pnj">
+       </li>
+      <li>Di addon SakugaGP klik tombol ini, tombol ini untuk mengganti ukuran canvas (Camera) menjadi full<br>
+        <img src="https://64.media.tumblr.com/fbfef8ea7a33a5063c3097da309887ff/feee98d2c76d78be-1c/s250x400/5b8bed2c3494b40ac255ee96ff36601da019fe35.pnj">
+</li>
+      <li>Setelah itu Collection "Template" nya di "Exclude from view layer" (uncheck checkbox yang ada di gambar bawah) biar templatenya tidak ikut ter-render<br>
+        <img src="https://64.media.tumblr.com/c9d55b01c72b9bd20f6a43df61025d93/feee98d2c76d78be-20/s400x600/2046fe2db511d2b2ad6a298ee42d9e5a7d90aa93.pnj"></li>
+      <li>Kemudian di addon SakugaGP, Klik Render > "Transparent" dan "Set to PNG"<br>
+    <img src="https://64.media.tumblr.com/4f73d7131d6c88acbaf930becfc73263/feee98d2c76d78be-b7/s250x400/fe9a42bdf880602d7ceac24ad5b3f3075bf98a0c.pnj"><img src="https://64.media.tumblr.com/79b67e9f93dcbb28e30d35bc9a017c62/feee98d2c76d78be-57/s250x400/535daae2244bcb565e0f85f8d2ffd4454dc76733.pnj"></li>
+      <li>Viewportnya akan tampak seperti ini : <br>
+        <img src="https://64.media.tumblr.com/6ec8579cc59fae2f1da2cda67c001591/feee98d2c76d78be-44/s540x810/54336c8385fb78c5c92ca520b60b16faab29365d.pnj"></li>
+      <li>Kemudian di addon SakugaGP, Klik Render > Pastikan tipe nama filenya (Name) adalah "Frame Numbers" dan klik "Render All" <br>
+        <img src="https://64.media.tumblr.com/f6c95b3199dbbb5ea4fe735501570cad/feee98d2c76d78be-56/s250x400/19d4d3fb08f5f4601f58ce2484863358d3206958.pnj"></li>
+      <li>Blender akan nge-freeze sementara karena sedang me-render semua keyframe nya, harap tunggu sampai proses selesai</li>
+      <li>Folder "export" akan otomatis di buat di dalam folder yang sama dengan project file blender<br>
+        <img src="https://64.media.tumblr.com/21832948068fd6f2377f79f5b5b74d6b/feee98d2c76d78be-f7/s540x810/14205723352b5aca530191dd2cd8ab3ab06e21cd.pnj"></li>
+       <li>Jika proses render selesai, Buka Krita dan buat file baru dengan template animasi<br>
+<img src="https://64.media.tumblr.com/540abe6309850a4000f1d916f3513441/feee98d2c76d78be-ec/s540x810/21789d48a0482ec50a9ca01dc26262fbb86cad49.pnj"></li>
+        <li>Tampilkan plugin SakugaKR nya di Settings > Docker > Cek "SakugaKR", lalu akan muncul docker seperti ini :<br><img src="https://64.media.tumblr.com/8029223afead3a290840b88cca9c8c31/feee98d2c76d78be-14/s400x600/1ec7e0a5a129bf4349e2352b4a95799341150a71.pnj">
+</li>
+            
+        <li>Di sebelah teks "Path" tersebut di ganti dengan path folder "export" yang tadi</li>
+        <li>Klik "Create Layers" , Layer animasi kosong akan otomatis terbuat sesuai nama-nama folder yang ada di dalam folder "export" itu</li>
+        <li>Klik salah satu Layer animasi kosong itu, klau klik "Import Images", tunggu sampai gambar-gambar nya ter-import<br>
+<img src="https://64.media.tumblr.com/b005072afb2c3385cd5356be97426786/feee98d2c76d78be-36/s540x810/e2db91debd878d1184f8558f8b31c6513123226c.pnj">
+</li>
+        <li>Ulangi langkah 11 tapi untuk layer kosong lainnya</li>
+        <li>Ubah durasi awal animasi menjadi 1 (Clip Start = 1) dan akhir animasi menjadi 24 (Clip End = 24)<br>
+<img src="https://64.media.tumblr.com/6ebbfc1b1be42177f16c25082ed23a32/feee98d2c76d78be-fb/s400x600/b62a2e9718503a74bf1b282d3166dc78afbc8430.pnj">
+        <li>Selesai!
+  </body>
 </html>
