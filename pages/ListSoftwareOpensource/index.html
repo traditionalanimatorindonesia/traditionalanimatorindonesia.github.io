@@ -1,12 +1,23 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <script src="../../assets/javascript/jquery.js"></script> 
 </head>
   <body>
-    <h1 style="margin-bottom:0;">List Software Animasi Opensource dan Tutorial nya</h1>
-    <br>
-    <b>Blender :</b>
-     <li><a href="../../pages/BlenderToKrita/index.html">Cara export animasi Grease Pencil dari Blender ke Krita</a></li>
-    <li>⚒️ Cara export animasi Grease Pencil dari Blender ke Clip Studio Paint</li>
+
+<script> 
+$(function(){
+  $("#includedContent").load("ListSoftware.html"); 
+});
+
+$(function(){
+  $("#includedContent2").load("ComparisonTable.html"); 
+});
+</script>
+
+     <div id="includedContent"></div>
+     <div id="includedContent2"></div>
+
+
   </body>
 </html>
