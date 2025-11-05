@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="assets/css/style.css"> 
+    <meta charset="UTF-8">
+    <meta property="og:title" content="Traditional Animator Indonesia" />
+    <meta property="og:description" content="Anime Glossary" />
+    <meta property="og:image" content="https://traditionalanimatorindonesia.github.io/assets/img/icon.png" />
+
+</head>
+<body>
+
+
+
+<script>
+fetch('assets/AnimeGlossary.json')
+.then(response => response.json())
+.then(data => {
+    tb = document.getElementById('tb');
+    v = [];
+    for(var i in data){
+        var key = i;
+        
+
+        tr = document.createElement('tr');
+        tb.appendChild(tr);
+
+        romaji = document.createElement('td');
+        tr.appendChild(romaji);
+        romaji.innerText = i;
+
+        td1 = document.createElement('td');
+        tr.appendChild(td1);
+        
+        td2 = document.createElement('td');
+        tr.appendChild(td2);
+        
+        td3 = document.createElement('td');
+        tr.appendChild(td3);
+
+        
+        var val = data[i];
+        v.push(val["jp"]);
+        idx = v.indexOf(val["jp"]);
+
+        jp = document.createElement('button');
+        td1.appendChild(jp);
+        jp.textContent = val["jp"];
+        //jp.style.fontSize = "20px"
+        jp.id = idx;
+
+        input = document.createElement('input');
+        xx = String(idx)+"val";
+        input.id = xx;
+        input.type = "text";
+        input.value = v[idx];
+        td1.appendChild(input);
+        input.hidden = true;
+
+        buttons = document.getElementById(idx);
+        buttons.onclick = function() {
+          // Select the text field
+          thisid = String(this.id)+"val";
+          inputVal = document.getElementById(thisid);
+          inputVal.select();
+          inputVal.setSelectionRange(0, 99999);
+          // Copy the text inside the text field
+          navigator.clipboard.writeText(inputVal.value);
+          //alert("Copied the text: " + input.value);
+        };
+
+        desc = document.createElement('i');
+        td2.appendChild(desc);
+        desc.innerText = val["desc"];
+        
+        if (val["link"] == "") {}
+        else {
+            link = document.createElement('a');
+            link_btn = document.createElement('button');
+            link.appendChild(link_btn)
+
+            link.setAttribute('href', val["link"]);
+            link.setAttribute('target', '_blank');
+
+            link_btn.textContent = "Reference"
+            
+            td3.appendChild(link);
+            }
+
+    }
+}
+);
+
+</script>
+
+<style>
+table,tr,td{border-top:1px solid lightgray;border-collapse: collapse;padding-top:5px;padding-bottom:5px;border-spacing:0px;border-radius:10px;}
+table{width:100%;color:black;background: rgba(255, 255, 255, .8);}
+button{border:1px solid gold;color:black;}
+
+</style>
+
+
+<center>
+<h2>Anime Glossary / Notations</h2>
+<table id="tb">
+</table>
+more anime terms : <a target="_blank" href="https://www.youtube.com/playlist?list=PL4dSARM_jX8JfRfuwPWPvv2cjRr-lVDup">アニメ用語</a>
+</center>
+
+</body>
+</html>
