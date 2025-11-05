@@ -104,11 +104,18 @@
     "link":""
     },
 
+    "background":
+    {
+    "jp":"​BG",
+    "desc":"",
+    "link":"https://www.youtube.com/watch?v=huNP6dntQDU"
+    },
+
     "BG kumi":
     {
     "jp":"​BG組",
     "desc":"line drawn in red indicating the contact areas between the animation and the background, which must be respected by the animator and the background artist",
-    "link":"https://www.youtube.com/watch?v=huNP6dntQDU"
+    "link":""
     },
     
     "bukku kumi":
