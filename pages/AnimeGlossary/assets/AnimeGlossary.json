@@ -513,7 +513,7 @@
     "fade in":
     {
     "jp":"F.I",
-    "desc":"​",
+    "desc":"​fade in effect",
     "link":"https://media1.tenor.com/m/TJGN2O9YJ8cAAAAd/xenoverse-xenoversegoku.gif"
     },
 
@@ -531,7 +531,7 @@
     "link":"https://www.youtube.com/watch?v=Yc0Q6hJg3SQ"
     },
 
-    "Duplicate Negative":
+    "duplicate negative":
     {
     "jp":"DN",
     "desc":"same like BANK but using film negatives​",
@@ -541,7 +541,7 @@
     "diffusion":
     {
     "jp":"DF",
-    "desc":"​",
+    "desc":"​diffusion effect",
     "link":"https://www.youtube.com/watch?v=FtwsW1AJndY"
     },
 
@@ -562,7 +562,7 @@
     "overlay":
     {
     "jp":"中OL",
-    "desc":"​",
+    "desc":"​overlay effect",
     "link":"https://www.youtube.com/watch?v=r4wkoUqTIIM"
     }
 
