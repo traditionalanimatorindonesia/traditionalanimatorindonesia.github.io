@@ -20,12 +20,44 @@ fetch('assets/AnimeGlossary.json')
     v = [];
     for(var i in data){
         var key = i;
+        var val = data[i];
+        v.push(val["jp"]);
+        idx = v.indexOf(val["jp"]);
         
-
         tr = document.createElement('tr');
         tb.appendChild(tr);
+        
+        type = document.createElement('td');
+        type.style.width = "10px";
+
+        if (val["type"] == ""){
+            type.style.backgroundColor = "none";
+        }
+
+        if (val["type"] == "CameraWork"){
+            type.style.backgroundColor = "purple";
+        }
+
+        if (val["type"] == "EditingComp"){
+            type.style.backgroundColor = "lightblue";
+        }
+        
+        if (val["type"] == "ProductionWorkflow"){
+            type.style.backgroundColor = "yellow";
+        }
+
+        if (val["type"] == "AnimDraw"){
+            type.style.backgroundColor = "red";
+        }
+        
+        if (val["type"] == "ConteTS"){
+            type.style.backgroundColor = "lightgreen";
+        }
+    
+        tr.appendChild(type);
 
         romaji = document.createElement('td');
+        romaji.style.paddingLeft = "5px";
         tr.appendChild(romaji);
         romaji.innerText = i;
 
@@ -38,11 +70,6 @@ fetch('assets/AnimeGlossary.json')
         
         td3 = document.createElement('td');
         tr.appendChild(td3);
-
-        
-        var val = data[i];
-        v.push(val["jp"]);
-        idx = v.indexOf(val["jp"]);
 
         jp = document.createElement('button');
         td1.appendChild(jp);
@@ -95,7 +122,7 @@ fetch('assets/AnimeGlossary.json')
 </script>
 
 <style>
-table,tr,td{border-top:1px solid lightgray;border-collapse: collapse;padding-top:5px;padding-bottom:5px;border-spacing:0px;border-radius:10px;}
+table,tr,td{border-top:1px solid lightgray;border-collapse: collapse;padding-top:5px;padding-bottom:5px;border-spacing:0px;}
 table{width:100%;color:black;background: rgba(255, 255, 255, .8);}
 button{border:1px solid black;color:black;}
 

@@ -3,574 +3,728 @@
     {
     "jp":"​監督",
     "desc":"​director",
-    "link":""
+    "link":"",
+    "type":"ProductionWorkflow"
     },
 
     "sou sakuga kantoku":
     {
     "jp":"総作画監督",
     "desc":"​senior animation director",
-    "link":""
+    "link":"",
+    "type":"ProductionWorkflow"
     },
 
     "sakuga kantoku":
     {
     "jp":"作画監督",
     "desc":"​animation director",
-    "link":""
+    "link":"",
+    "type":"ProductionWorkflow"
     },
 
     "enshutsu":
     {
     "jp":"演出",
     "desc":"​episode director",
-    "link":""
+    "link":"",
+    "type":"ProductionWorkflow"
     },
 
     "settei":
     {
     "jp":"設定",
     "desc":"model sheet",
-    "link":""
+    "link":"",
+    "type":"ProductionWorkflow"
     },
 
     "(sakuga,douga.shiage) chuuijikou":
     {
     "jp":"(作画、動画、仕上げ)注意事項",
     "desc":"instruction notes for keyframe, in-between and painting",
-    "link":""
+    "link":"",
+    "type":"ProductionWorkflow"
     },
 
     "genga":
     {
     "jp":"​原画",
     "desc":"keyframe",
-    "link":""
+    "link":"",
+    "type":"ProductionWorkflow"
     },
     
-    "daiichigenga ​(​or ​ichigen)​ / reiauto / rafu gen":
+    "daiichigenga ​(​or ​ichigen)​ / reiauto (layout) / rafu gen":
     {
-    "jp":"​第一原画/一原/レイアウト/ラフ原",
+    "jp":"​第一原画 / 一原 / レイアウト (LO) / ラフ原",
     "desc":"pripary genga (background layout + rough keyframes)",
-    "link":""
+    "link":"https://www.youtube.com/watch?v=QFIrwk5aBHA",
+    "type":"ProductionWorkflow"
     },
 
     "dainigenga ​(​or ​nigen)​":
     {
     "jp":"​第二原画 /二原",
     "desc":"secondary genga (cleaned keyframes)",
-    "link":""
+    "link":"",
+    "type":"ProductionWorkflow"
     },
 
     "douga":
     {
     "jp":"​動画",
     "desc":"clean-up and in-between",
-    "link":""
+    "link":"",
+    "type":"ProductionWorkflow"
     },
 
     "douga kensa":
     {
     "jp":"動画検査",
     "desc":"clean-up and in-between supervisor",
-    "link":""
+    "link":"",
+    "type":"ProductionWorkflow"
     },
 
     "nakawari":
     {
     "jp":"中割り",
     "desc":"in-between",
-    "link":"https://www.youtube.com/watch?v=74WDPfY1Rds"
-    },
-
-    "bukku":
-    {
-    "jp":"BOOK",
-    "desc":"detached element from the background on a different cel",
-    "link":""
-    },
-
-    "sen":
-    {
-    "jp":"線",
-    "desc":"line",
-    "link":""
-    },
-    
-    "kumisen":
-    {
-    "jp":"組線/くみ線/クミ線",
-    "desc":"line drawn in color indicating the contact areas between different cels or different parts of a same cel (for gousei)",
-    "link":""
-    },
-
-    "background":
-    {
-    "jp":"​BG",
-    "desc":"",
-    "link":"https://www.youtube.com/watch?v=huNP6dntQDU"
-    },
-
-    "BG kumi":
-    {
-    "jp":"​BG組",
-    "desc":"line drawn in red indicating the contact areas between the animation and the background, which must be respected by the animator and the background artist",
-    "link":""
-    },
-    
-    "bukku kumi":
-    {
-    "jp":"​BOOK組",
-    "desc":"line drawn in red indicating the contact areas between theanimation and detached background elements, which must be respected by the animator and the background artist",
-    "link":""
-    },
-
-    "jissen":
-    {
-    "jp":"実線",
-    "desc":"black line (outline of a character)",
-    "link":""
-    },
-    
-    "rinkaku":
-    {
-    "jp":"輪郭",
-    "desc":"outline",
-    "link":""
-    },
-
-    "iro toresu":
-    {
-    "jp":"色トレス",
-    "desc":"color trace (colored outline of an animation drawing)",
-    "link":""
-    },
-
-    "hairaito":
-    {
-    "jp":"Hi/ハイライト",
-    "desc":"highlight",
-    "link":""
-    },
-
-    "kage":
-    {
-    "jp":"影/カゲ",
-    "desc":"shadow",
-    "link":""
-    },
-    
-    "uranuri":
-    {
-    "jp":"裏塗り",
-    "desc":"colored in shadow sections and instructions for the colorist to use as painting directions",
-    "link":""
-    },
-
-    "nuki":
-    {
-    "jp":"抜き/ヌキ",
-    "desc":"indication on the uranuri of an area which must be left blank",
-    "link":""
-    },
-
-    "shiage":
-    {
-    "jp":"仕上げ",
-    "desc":"coloring of a cel",
-    "link":""
-    },
-
-    "seru":
-    {
-    "jp":"セル",
-    "desc":"cel",
-    "link":""
-    },
-
-    "seru bare/seru bare chuui":
-    {
-    "jp":"セルばれ/セルバレ",
-    "desc":"cut off frame/border",
-    "link":""
+    "link":"https://www.youtube.com/watch?v=74WDPfY1Rds",
+    "type":"ProductionWorkflow"
     },
 
     "gousei":
     {
     "jp":"合成",
     "desc":"compositing,​assembly",
-    "link":""
+    "link":"",
+    "type":"ProductionWorkflow"
+    },
+    
+    "action":
+    {
+    "jp":"A.C",
+    "desc":"​Notation in conte for same character action but animated in separate cuts",
+    "link":"https://www.youtube.com/watch?v=Yc0Q6hJg3SQ",
+    "type":"ConteTS"
+    },
+
+    "sound effect":
+    {
+    "jp":"SE",
+    "desc":"sound effect",
+    "link":"https://www.youtube.com/watch?v=YZrukQLqMEo",
+    "type":"ConteTS"
+    },
+
+    "bukku":
+    {
+    "jp":"BOOK",
+    "desc":"detached element from the background on a different cel",
+    "link":"",
+    "type":"AnimDraw"
+    },
+
+    "sen":
+    {
+    "jp":"線",
+    "desc":"line",
+    "link":"",
+    "type":"AnimDraw"
+    },
+    
+    "kumisen":
+    {
+    "jp":"組線/くみ線/クミ線",
+    "desc":"line drawn in color indicating the contact areas between different cels or different parts of a same cel (for gousei)",
+    "link":"",
+    "type":"AnimDraw"
+    },
+
+    "background":
+    {
+    "jp":"​BG",
+    "desc":"",
+    "link":"https://www.youtube.com/watch?v=huNP6dntQDU",
+    "type":"AnimDraw"
+    },
+
+    "BG kumi":
+    {
+    "jp":"​BG組",
+    "desc":"line drawn in red indicating the contact areas between the animation and the background, which must be respected by the animator and the background artist",
+    "link":"",
+    "type":"AnimDraw"
+    },
+    
+    "bukku kumi":
+    {
+    "jp":"​BOOK組",
+    "desc":"line drawn in red indicating the contact areas between theanimation and detached background elements, which must be respected by the animator and the background artist",
+    "link":"",
+    "type":"AnimDraw"
+    },
+
+    "jissen":
+    {
+    "jp":"実線",
+    "desc":"black line (outline of a character)",
+    "link":"",
+    "type":"AnimDraw"
+    },
+    
+    "rinkaku":
+    {
+    "jp":"輪郭",
+    "desc":"outline",
+    "link":"",
+    "type":"AnimDraw"
+    },
+
+    "iro toresu":
+    {
+    "jp":"色トレス",
+    "desc":"color trace (colored outline of an animation drawing)",
+    "link":"",
+    "type":"AnimDraw"
+    },
+
+    "hairaito":
+    {
+    "jp":"Hi/ハイライト",
+    "desc":"highlight",
+    "link":"",
+    "type":"AnimDraw"
+    },
+
+    "kage":
+    {
+    "jp":"影/カゲ",
+    "desc":"shadow",
+    "link":"",
+    "type":"AnimDraw"
+    },
+    
+    "uranuri":
+    {
+    "jp":"裏塗り",
+    "desc":"colored in shadow sections and instructions for the colorist to use as painting directions",
+    "link":"",
+    "type":"AnimDraw"
+    },
+
+    "nuki":
+    {
+    "jp":"抜き/ヌキ",
+    "desc":"indication on the uranuri of an area which must be left blank",
+    "link":"",
+    "type":"AnimDraw"
+    },
+
+    "shiage":
+    {
+    "jp":"仕上げ",
+    "desc":"coloring of a cel",
+    "link":"https://www.youtube.com/watch?v=-_6-IM2jAFA",
+    "type":"AnimDraw"
+    },
+
+    "seru":
+    {
+    "jp":"セル",
+    "desc":"cel",
+    "link":"",
+    "type":"AnimDraw"
+    },
+
+    "seru bare/seru bare chuui":
+    {
+    "jp":"セルばれ / セルバレ",
+    "desc":"cut off frame/border",
+    "link":"",
+    "type":"AnimDraw"
     },
 
     "gousei denpyou":
     {
     "jp":"合成伝票",
     "desc":"gousei chart",
-    "link":""
+    "link":"",
+    "type":"AnimDraw"
     },
 
     "shuusei":
     {
     "jp":"修正/修",
     "desc":"correction",
-    "link":""
+    "link":"",
+    "type":"AnimDraw"
     },
 
     "riteiku":
     {
     "jp":"リテイク/R",
     "desc":"retake",
-    "link":""
+    "link":"",
+    "type":"AnimDraw"
     },
 
     "kabuse":
     {
     "jp":"かぶせ/カブセ",
     "desc":"to cover a part of the drawing",
-    "link":""
+    "link":"",
+    "type":"AnimDraw"
     },
 
     "sankou /san":
     {
     "jp":"参考/参",
     "desc":"reference",
-    "link":""
+    "link":"",
+    "type":"AnimDraw"
     },
 
     "dou tore":
     {
     "jp":"同トレ/同トレス",
     "desc":"trace the exact same lines",
-    "link":""
+    "link":"",
+    "type":"AnimDraw"
     },
 
     "dou tore bure":
     {
     "jp":"同トレブレ/同トレスブレ",
     "desc":"trace the same lines slightly offset in order to add a shaking effect during the animation",
-    "link":""
+    "link":"",
+    "type":"AnimDraw"
     },
 
     "bure":
     {
     "jp":"ブレ/ぶれ",
     "desc":"shake effect different/bigger than the “dou tore bure”. It’s not justabout tracing the same lines but consider the shape and the position/movement of the shake.",
-    "link":""
+    "link":"",
+    "type":"AnimDraw"
     },
 
     "hoka":
     {
     "jp":"他",
     "desc":"“other” refer to other cel or other part of a drawing",
-    "link":""
+    "link":"",
+    "type":"AnimDraw"
     },
 
     "kuchi paku":
     {
     "jp":"口パク/クチパク",
     "desc":"lipsync",
-    "link":""
+    "link":"",
+    "type":"AnimDraw"
     },
 
     "aki kuchi":
     {
     "jp":"開き口/アキ口",
     "desc":"opened mouth",
-    "link":""
+    "link":"",
+    "type":"AnimDraw"
     },
     
     "naka kuchi":
     {
     "jp":"中口/ナカ口",
     "desc":"middle mouth",
-    "link":""
+    "link":"",
+    "type":"AnimDraw"
     },
 
     "ha kuchi":
     {
     "jp":"歯口",
     "desc":"a type of “toji kuchi” which only the teeth of a character is exposed",
-    "link":""
+    "link":"",
+    "type":"AnimDraw"
     },
 
     "nakawari kuchi":
     {
     "jp":"​中割り口",
     "desc":"normal in-between of a mouth",
-    "link":""
+    "link":"",
+    "type":"AnimDraw"
     },
 
     "toji kuchi":
     {
     "jp":"閉じ口/トジ口",
     "desc":"closed mouth",
-    "link":""
+    "link":"",
+    "type":"AnimDraw"
     },
 
     "serifu":
     {
     "jp":"セリフ",
     "desc":"dialogue",
-    "link":""
+    "link":"",
+    "type":"AnimDraw"
     },
 
     "naka serifu":
     {
     "jp":"中セリフ",
     "desc":"mouth movement during a in-between motion",
-    "link":""
+    "link":"",
+    "type":"AnimDraw"
     },
 
     "me pachi":
     {
     "jp":"目パチ",
     "desc":"eye blink",
-    "link":""
+    "link":"",
+    "type":"AnimDraw"
     },
 
     "aki me":
     {
     "jp":"開き目/アキ目",
     "desc":"opened eyes",
-    "link":""
+    "link":"",
+    "type":"AnimDraw"
     },
 
     "naka me":
     {
     "jp":"中目/ナカ目",
     "desc":"middle eyes",
-    "link":""
+    "link":"",
+    "type":"AnimDraw"
     },
 
     "toji me":
     {
     "jp":"閉じ目/トジ目",
     "desc":"closed eyes",
-    "link":""
+    "link":"",
+    "type":"AnimDraw"
     },
 
     "naka me pachi":
     {
     "jp":"中目パチ​",
     "desc":"eyes movement during a in-between motion",
-    "link":""
+    "link":"",
+    "type":"AnimDraw"
     },
 
     "naka nabiki":
     {
     "jp":"中なびき",
     "desc":"in-between to follow the movement of the subject (for example clothes or hair). Do not in-between directly in the middle or it will break the motion",
-    "link":""
+    "link":"",
+    "type":"AnimDraw"
     },
 
     "randamu wari":
     {
     "jp":"ランダム割",
     "desc":"​in-between which does not follow the motion linearly.Randomize the positon",
-    "link":""
+    "link":"",
+    "type":"AnimDraw"
     },
 
     "katto":
     {
     "jp":"CUT/カット",
     "desc":"shot",
-    "link":""
+    "link":"",
+    "type":"AnimDraw"
     },
 
     "katto bukuro":
     {
     "jp":"カット袋",
     "desc":"cut envelope",
-    "link":""
+    "link":"",
+    "type":"AnimDraw"
     },
 
     "taimu shiito(shiito)":
     {
     "jp":"タイムシート(シート)",
     "desc":"time sheet",
-    "link":""
+    "link":"",
+    "type":"AnimDraw"
     },
 
     "tappu ana":
     {
     "jp":"タップ穴",
     "desc":"​peg holes",
-    "link":""
+    "link":"",
+    "type":"AnimDraw"
     },
 
     "tsume shiji":
     {
     "jp":"ツメ指示",
     "desc":"​animation timing chart",
-    "link":""
-    },
-
-    "touka kou":
-    {
-    "jp":"透過光/T光",
-    "desc":"​glow effect (indication for compositing)",
-    "link":""
-    },
-
-    "daburashi":
-    {
-    "jp":"ダブラシ/Wラシ/WXP/WEXP",
-    "desc":"shadow effect on the background (indication for compositing)",
-    "link":""
-    },
-
-    "masuku":
-    {
-    "jp":"マスク",
-    "desc":"(mask) mask for the compositing",
-    "link":""
+    "link":"",
+    "type":"AnimDraw"
     },
 
     "burashi":
     {
     "jp":"​ブラシ",
     "desc":"(brush) special brush texture lines on a separate cel",
-    "link":""
+    "link":"",
+    "type":"AnimDraw"
     },
 
     "2 gou kage":
     {
     "jp":"​2号カゲ/2号影",
     "desc":"secondary shadow (indication for colorists)",
-    "link":""
+    "link":"",
+    "type":"AnimDraw"
     },
 
     "burakku":
     {
     "jp":"BL",
     "desc":"​(black)​​area to be filled in black (indication for colorists)",
-    "link":"https://www.youtube.com/watch?v=z_vZAzynB-A"
+    "link":"https://www.youtube.com/watch?v=z_vZAzynB-A",
+    "type":"AnimDraw"
     },
 
     "iro TP":
     {
     "jp":"色T.P",
     "desc":"color lines (on the douga) that will be colored during the shiage​​(indication for colorists)",
-    "link":""
+    "link":"",
+    "type":"AnimDraw"
     },
 
     "gyaku shiito":
     {
     "jp":"逆シート",
     "desc":"​reverse frame sequence",
-    "link":""
+    "link":"",
+    "type":"AnimDraw"
     },
 
     "ripiito":
     {
     "jp":"​リピート​",
     "desc":"(repeat) animation loop on the timesheet",
-    "link":""
+    "link":"",
+    "type":"AnimDraw"
     },
 
     "tome":
     {
     "jp":"止め​/​止メ",
     "desc":"​a cel that remains still",
-    "link":""
+    "link":"",
+    "type":"AnimDraw"
     },
 
     "buraa":
     {
     "jp":"ブラー",
     "desc":"(blur) a smear effect",
-    "link":""
+    "link":"",
+    "type":"AnimDraw"
     },
 
     "awase":
     {
     "jp":"合わせ/あわせ",
     "desc":"to match something (for example, match A cel, match the model sheet etc)",
-    "link":""
+    "link":"",
+    "type":"AnimDraw"
     },
 
     "koma":
     {
     "jp":"コマ",
     "desc":"​a frame",
-    "link":""
+    "link":"",
+    "type":"AnimDraw"
     },
 
     "tacchi":
     {
     "jp":"タッチ",
     "desc":"(touch) rendering detail lines on a drawing, such as : cheek lines, scars/scratches/dirt , etc..",
-    "link":"https://www.japanesewithanime.com/2020/03/blushing-lines.html"
+    "link":"https://www.japanesewithanime.com/2020/03/blushing-lines.html",
+    "type":"AnimDraw"
     },
 
     "nijuusen":
     {
     "jp":"二重線",
     "desc":"​an outline with a double thickness (used in some series)",
-    "link":"https://www.sakugabooru.com/post/show/24639"
+    "link":"https://www.sakugabooru.com/post/show/24639",
+    "type":"AnimDraw"
     },
 
     "ura toresu":
     {
     "jp":"裏トレス/うらトレス",
     "desc":"​a frame (indicated by the keyframe artist) which must be flipped (vertically or horizontally) from another one",
-    "link":""
+    "link":"",
+    "type":"AnimDraw"
     },
     
-    "fade in":
+    "slide":
     {
-    "jp":"F.I",
-    "desc":"​fade in effect",
-    "link":"https://media1.tenor.com/m/TJGN2O9YJ8cAAAAd/xenoverse-xenoversegoku.gif"
-    },
-
-    "action":
-    {
-    "jp":"AC",
-    "desc":"​Notation in conte for same character action but animated in separate cuts",
-    "link":"https://www.youtube.com/watch?v=Yc0Q6hJg3SQ"
-    },
-
-    "bank cut":
-    {
-    "jp":"BANK",
-    "desc":"​reuse of cut / cell / background that already been used in different scene",
-    "link":"https://www.youtube.com/watch?v=Yc0Q6hJg3SQ"
-    },
-
-    "duplicate negative":
-    {
-    "jp":"DN",
-    "desc":"same like BANK but using film negatives​",
-    "link":"https://www.youtube.com/watch?v=SKjC7xrOCrE"
-    },
-
-    "diffusion":
-    {
-    "jp":"DF",
-    "desc":"​diffusion effect",
-    "link":"https://www.youtube.com/watch?v=FtwsW1AJndY"
+    "jp":"SL",
+    "desc":"notation for Layer Tweening",
+    "link":"https://www.youtube.com/watch?v=ZRcDfENz-rk",
+    "type":"AnimDraw"
     },
 
     "fix":
     {
     "jp":"FIX",
     "desc":"​Camera that is still / not moving",
-    "link":"https://www.youtube.com/watch?v=421ygTSdsog"
+    "link":"https://www.youtube.com/watch?v=421ygTSdsog",
+    "type":"CameraWork"
     },
 
     "follow":
     {
     "jp":"Follow",
     "desc":"Background is moving , ​Camera is following character",
-    "link":"https://www.youtube.com/watch?v=Izbcfnz1NcI"
+    "link":"https://www.youtube.com/watch?v=Izbcfnz1NcI",
+    "type":"CameraWork"
     },
     
+    "track up":
+    {
+    "jp":"TU",
+    "desc":"Camera Zoom in",
+    "link":"https://www.youtube.com/watch?v=dS15gmrgb5c",
+    "type":"CameraWork"
+    },
+
+    "track back":
+    {
+    "jp":"TB",
+    "desc":"Camera Zoom Out",
+    "link":"https://www.youtube.com/watch?v=dS15gmrgb5c",
+    "type":"CameraWork"
+    },
+    
+    "bank cut":
+    {
+    "jp":"BANK",
+    "desc":"​reuse of cut / cell / background that already been used in different scene",
+    "link":"https://www.youtube.com/watch?v=Yc0Q6hJg3SQ",
+    "type":"EditingComp"
+    },
+
+    "duplicate negative":
+    {
+    "jp":"DN",
+    "desc":"same like BANK but using film negatives​",
+    "link":"https://www.youtube.com/watch?v=SKjC7xrOCrE",
+    "type":"EditingComp"
+    },
+
+    "touka kou":
+    {
+    "jp":"透過光/T光",
+    "desc":"​glow effect (indication for compositing)",
+    "link":"",
+    "type":"EditingComp"
+    },
+
+    "daburashi":
+    {
+    "jp":"ダブラシ/Wラシ/WXP/WEXP",
+    "desc":"shadow effect on the background (indication for compositing)",
+    "link":"",
+    "type":"EditingComp"
+    },
+
+    "masuku":
+    {
+    "jp":"マスク",
+    "desc":"(mask) mask for the compositing",
+    "link":"",
+    "type":"EditingComp"
+    },
+
+    "diffusion":
+    {
+    "jp":"DF",
+    "desc":"​diffusion effect",
+    "link":"https://www.youtube.com/watch?v=FtwsW1AJndY",
+    "type":"EditingComp"
+    },
+
+    "iris in":
+    {
+    "jp":"アイリスイン",
+    "desc":"​iris in",
+    "link":"https://www.youtube.com/watch?v=H_lTW2xxalk",
+    "type":"EditingComp"
+    },
+
+    "iris out":
+    {
+    "jp":"アイリスアウト",
+    "desc":"​iris out",
+    "link":"https://www.youtube.com/watch?v=H_lTW2xxalk",
+    "type":"EditingComp"
+    },
+    
+    "fade in":
+    {
+    "jp":"F.I",
+    "desc":"transition from black",
+    "link":"https://media1.tenor.com/m/TJGN2O9YJ8cAAAAd/xenoverse-xenoversegoku.gif",
+    "type":"EditingComp"
+    },
+
+    "fade out":
+    {
+    "jp":"F.O",
+    "desc":"​transition to black",
+    "link":"https://media1.tenor.com/m/YqJGsh4AcSUAAAAC/goodbye-disappear.gif",
+    "type":"EditingComp"
+    },
+    
+    "white in":
+    {
+    "jp":"W.I",
+    "desc":"​transition from white",
+    "link":"https://www.youtube.com/watch?v=VrmpEnNMt1Q",
+    "type":"EditingComp"
+    },
+    
+    "white out":
+    {
+    "jp":"W.O",
+    "desc":"​transition to white",
+    "link":"https://www.youtube.com/watch?v=VrmpEnNMt1Q",
+    "type":"EditingComp"
+    },
+
     "overlay":
     {
     "jp":"中OL",
-    "desc":"​overlay effect",
-    "link":"https://www.youtube.com/watch?v=r4wkoUqTIIM"
+    "desc":"​overlay",
+    "link":"https://www.youtube.com/watch?v=r4wkoUqTIIM",
+    "type":"EditingComp"
     }
 
 }
