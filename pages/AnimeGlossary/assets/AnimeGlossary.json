@@ -66,8 +66,8 @@
     "dainigenga ​(​or ​nigen)​":
     {
     "jp":"​第二原画 /二原",
-    "desc":"secondary genga (cleaned keyframes / tiedown)",
-    "link":"",
+    "desc":"secondary genga (cleaned keyframes)",
+    "link":"https://www.youtube.com/watch?v=Qg-eJ0yOfK8",
     "type":"ProductionWorkflow"
     },
 
@@ -75,7 +75,7 @@
     {
     "jp":"​動画",
     "desc":"clean-up and in-between",
-    "link":"",
+    "link":"https://listeningside-net.translate.goog/a_side06.html?_x_tr_sl=ja&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp&_x_tr_sch=http",
     "type":"ProductionWorkflow"
     },
 
@@ -84,6 +84,14 @@
     "jp":"動画検査",
     "desc":"clean-up and in-between supervisor",
     "link":"",
+    "type":"ProductionWorkflow"
+    },
+    
+    "douga chekku":
+    {
+    "jp":"動画チェック",
+    "desc":"douga check",
+    "link":"https://www.youtube.com/watch?v=tt9ZzWMW1TQ",
     "type":"ProductionWorkflow"
     },
 
@@ -99,7 +107,7 @@
     {
     "jp":"合成",
     "desc":"compositing,​assembly",
-    "link":"",
+    "link":"https://www.youtube.com/watch?v=yiajfHBjGJE",
     "type":"ProductionWorkflow"
     },
     
@@ -126,6 +134,22 @@
     "link":"",
     "type":"AnimDraw"
     },
+    
+    "katto":
+    {
+    "jp":"CUT / カット",
+    "desc":"shot",
+    "link":"",
+    "type":"AnimDraw"
+    },
+
+    "katto bukuro":
+    {
+    "jp":"カット袋",
+    "desc":"cut envelope",
+    "link":"https://www.youtube.com/watch?v=1i-q7V6_1AE",
+    "type":"AnimDraw"
+    },
 
     "sen":
     {
@@ -139,7 +163,7 @@
     {
     "jp":"組線/くみ線/クミ線",
     "desc":"line drawn in color indicating the contact areas between different cels or different parts of a same cel (for gousei)",
-    "link":"",
+    "link":"https://www.youtube.com/watch?v=uDQNIrnPdWk",
     "type":"AnimDraw"
     },
 
@@ -155,7 +179,7 @@
     {
     "jp":"​BG組",
     "desc":"line drawn in red indicating the contact areas between the animation and the background, which must be respected by the animator and the background artist",
-    "link":"",
+    "link":"https://www.youtube.com/watch?v=uDQNIrnPdWk",
     "type":"AnimDraw"
     },
     
@@ -193,7 +217,7 @@
 
     "hairaito":
     {
-    "jp":"Hi/ハイライト",
+    "jp":"Hi / ハイライト",
     "desc":"highlight",
     "link":"",
     "type":"AnimDraw"
@@ -323,23 +347,40 @@
     {
     "jp":"口パク/クチパク",
     "desc":"lipsync",
-    "link":"",
+    "link":"http://listeningside.net/a_side07.html#:~:text=%E5%8F%A3%E3%83%91%E3%82%AF%E3%82%82",
     "type":"AnimDraw"
     },
+    
+    "toji kuchi":
+    {
+    "jp":"閉じ口/トジ口",
+    "desc":"closed mouth",
+    "link":"http://listeningside.net/a_side07.html#:~:text=%E4%B8%8A%E3%81%AE%E6%AD%AF",
+    "type":"AnimDraw"
+    },
+
+    "naka kuchi":
+    {
+    "jp":"中口/ナカ口",
+    "desc":"middle mouth",
+    "link":"http://listeningside.net/a_side07.html#:~:text=%E4%B8%8A%E3%81%AE%E6%AD%AF",
+    "type":"AnimDraw"
+    },
+
 
     "aki kuchi":
     {
     "jp":"開き口/アキ口",
     "desc":"opened mouth",
-    "link":"",
+    "link":"http://listeningside.net/a_side07.html#:~:text=%E4%B8%8A%E3%81%AE%E6%AD%AF",
     "type":"AnimDraw"
     },
     
-    "naka kuchi":
+    "nakawari kuchi":
     {
-    "jp":"中口/ナカ口",
-    "desc":"middle mouth",
-    "link":"",
+    "jp":"​中割り口",
+    "desc":"normal in-between of a mouth",
+    "link":"http://listeningside.net/a_side07.html#:~:text=%E4%B8%8A%E3%81%AE%E6%AD%AF",
     "type":"AnimDraw"
     },
 
@@ -347,23 +388,7 @@
     {
     "jp":"歯口",
     "desc":"a type of “toji kuchi” which only the teeth of a character is exposed",
-    "link":"",
-    "type":"AnimDraw"
-    },
-
-    "nakawari kuchi":
-    {
-    "jp":"​中割り口",
-    "desc":"normal in-between of a mouth",
-    "link":"",
-    "type":"AnimDraw"
-    },
-
-    "toji kuchi":
-    {
-    "jp":"閉じ口/トジ口",
-    "desc":"closed mouth",
-    "link":"",
+    "link":"http://listeningside.net/a_side07.html#:~:text=%E3%81%9F%E3%81%A0%E3%81%97",
     "type":"AnimDraw"
     },
 
@@ -371,15 +396,7 @@
     {
     "jp":"セリフ",
     "desc":"dialogue",
-    "link":"",
-    "type":"AnimDraw"
-    },
-
-    "naka serifu":
-    {
-    "jp":"中セリフ",
-    "desc":"mouth movement during a in-between motion",
-    "link":"",
+    "link":"http://listeningside.net/a_side07.html#:~:text=%E5%8F%A3%E3%83%91%E3%82%AF%E3%81%AE%E3%82%BF%E3%82%A4%E3%83%A0%E3%82%B7%E3%83%BC%E3%83%88%E3%81%AE%E3%81%A4%E3%81%91%E6%96%B9%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6",
     "type":"AnimDraw"
     },
 
@@ -387,31 +404,39 @@
     {
     "jp":"目パチ",
     "desc":"eye blink",
-    "link":"",
+    "link":"http://listeningside.net/a_side07.html",
     "type":"AnimDraw"
     },
 
     "aki me":
     {
-    "jp":"開き目/アキ目",
+    "jp":"開き目 / アキ目",
     "desc":"opened eyes",
-    "link":"",
+    "link":"http://listeningside.net/a_side07.html",
     "type":"AnimDraw"
     },
 
     "naka me":
     {
-    "jp":"中目/ナカ目",
+    "jp":"中目 / ナカ目",
     "desc":"middle eyes",
-    "link":"",
+    "link":"http://listeningside.net/a_side07.html",
     "type":"AnimDraw"
     },
 
     "toji me":
     {
-    "jp":"閉じ目/トジ目",
+    "jp":"閉じ目 / トジ目",
     "desc":"closed eyes",
-    "link":"",
+    "link":"http://listeningside.net/a_side07.html",
+    "type":"AnimDraw"
+    },
+    
+    "naka serifu":
+    {
+    "jp":"中セリフ",
+    "desc":"mouth movement during a in-between motion",
+    "link":"http://listeningside.net/a_side07.html#:~:text=%E4%B8%AD%E7%9B%AE%E3%83%91%E3%83%81",
     "type":"AnimDraw"
     },
 
@@ -419,7 +444,7 @@
     {
     "jp":"中目パチ​",
     "desc":"eyes movement during a in-between motion",
-    "link":"",
+    "link":"http://listeningside.net/a_side07.html#:~:text=%E4%B8%AD%E7%9B%AE%E3%83%91%E3%83%81",
     "type":"AnimDraw"
     },
 
@@ -439,27 +464,11 @@
     "type":"AnimDraw"
     },
 
-    "katto":
-    {
-    "jp":"CUT/カット",
-    "desc":"shot",
-    "link":"",
-    "type":"AnimDraw"
-    },
-
-    "katto bukuro":
-    {
-    "jp":"カット袋",
-    "desc":"cut envelope",
-    "link":"",
-    "type":"AnimDraw"
-    },
-
     "taimu shiito(shiito)":
     {
     "jp":"タイムシート(シート)",
     "desc":"time sheet",
-    "link":"",
+    "link":"https://listeningside-net.translate.goog/a_side03.html?_x_tr_sl=ja&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp&_x_tr_sch=http",
     "type":"AnimDraw"
     },
 
@@ -467,7 +476,7 @@
     {
     "jp":"タップ穴",
     "desc":"​peg holes",
-    "link":"",
+    "link":"http://www.nekomataya.info/tools/psAxe/images/punchGuide/peg.png",
     "type":"AnimDraw"
     },
 
@@ -607,6 +616,23 @@
     "type":"CameraWork"
     },
     
+    "yoko PAN":
+    {
+    "jp":"横PAN",
+    "desc":"Camera horizontal panorama movement",
+    "link":"https://www.youtube.com/watch?v=z0dgPR8-xig",
+    "type":"CameraWork"
+    },
+
+    "tate PAN":
+    {
+    "jp":"縦PAN",
+    "desc":"Camera vertical panorama movement",
+    "link":"https://www.youtube.com/watch?v=z0dgPR8-xig",
+    "type":"CameraWork"
+    },
+
+
     "track up":
     {
     "jp":"TU",
@@ -643,7 +669,7 @@
     {
     "jp":"透過光/T光",
     "desc":"​glow effect (indication for compositing)",
-    "link":"",
+    "link":"https://www.youtube.com/watch?v=PZG-12moFZM",
     "type":"EditingComp"
     },
 
@@ -651,7 +677,7 @@
     {
     "jp":"ダブラシ/Wラシ/WXP/WEXP",
     "desc":"shadow effect on the background (indication for compositing)",
-    "link":"",
+    "link":"https://x.com/info_nekomataya/status/1119943732395003904",
     "type":"EditingComp"
     },
 
@@ -659,7 +685,7 @@
     {
     "jp":"マスク",
     "desc":"(mask) mask for the compositing",
-    "link":"",
+    "link":"https://www.youtube.com/watch?v=PhAGzjsVUGk",
     "type":"EditingComp"
     },
 
