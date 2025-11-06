@@ -18,7 +18,9 @@ fetch('assets/AnimeGlossary.json')
 .then(data => {
     tb = document.getElementById('tb');
     v = [];
+    numb = 0;
     for(var i in data){
+        numb += 1;
         var key = i;
         var val = data[i];
         v.push(val["jp"]);
@@ -28,14 +30,16 @@ fetch('assets/AnimeGlossary.json')
         tb.appendChild(tr);
         
         type = document.createElement('td');
-        type.style.width = "10px";
+        type.style.width = "20px";
+        type.style.textAlign = "center";
+        type.innerText = numb;
 
         if (val["type"] == ""){
             type.style.backgroundColor = "none";
         }
 
         if (val["type"] == "CameraWork"){
-            type.style.backgroundColor = "purple";
+            type.style.backgroundColor = "violet";
         }
 
         if (val["type"] == "EditingComp"){
