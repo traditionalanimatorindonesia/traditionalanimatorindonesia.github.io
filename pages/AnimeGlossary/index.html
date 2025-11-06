@@ -38,6 +38,10 @@ fetch('assets/AnimeGlossary.json')
             type.style.backgroundColor = "none";
         }
 
+        if (val["type"] == "SpecialTechnique"){
+            type.style.backgroundColor = "lightgray";
+        }
+
         if (val["type"] == "CameraWork"){
             type.style.backgroundColor = "violet";
         }

@@ -1,4 +1,20 @@
 {
+    "wakame shadows":
+    {
+    "jp":"​ワカメ影",
+    "desc":"wakame shadows / seaweed shadows",
+    "link":"https://www.sakugabooru.com/wiki/show?title=wakame_shadows",
+    "type":"SpecialTechnique"
+    },
+
+    "impact frames":
+    {
+    "jp":"​ショックコマ",
+    "desc":"shock frames / impact frames",
+    "link":"https://www.sakugabooru.com/wiki/show?title=impact_frames",
+    "type":"SpecialTechnique"
+    },
+
     "kantoku":
     {
     "jp":"​監督",
@@ -669,7 +685,7 @@
     {
     "jp":"透過光/T光",
     "desc":"​glow effect (indication for compositing)",
-    "link":"https://www.youtube.com/watch?v=PZG-12moFZM",
+    "link":"https://shinobicreative.com/en/blogs/animator-guidance-blogs/what-is-t-lightt%E5%85%89-effects-understanding-t-light-effects-in-japanese-animation",
     "type":"EditingComp"
     },
 
