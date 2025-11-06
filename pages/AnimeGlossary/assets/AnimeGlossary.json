@@ -151,6 +151,14 @@
     "link":"",
     "type":"ProductionWorkflow"
     },
+    
+    "taimu shiito(shiito)":
+    {
+    "jp":"タイムシート(シート)",
+    "desc":"time sheet",
+    "link":"https://listeningside-net.translate.goog/a_side03.html?_x_tr_sl=ja&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp&_x_tr_sch=http",
+    "type":"ConteTS"
+    },
 
     "katto":
     {
@@ -523,14 +531,6 @@
     "jp":"ランダム割",
     "desc":"​in-between which does not follow the motion linearly.Randomize the positon",
     "link":"",
-    "type":"AnimDraw"
-    },
-
-    "taimu shiito(shiito)":
-    {
-    "jp":"タイムシート(シート)",
-    "desc":"time sheet",
-    "link":"https://listeningside-net.translate.goog/a_side03.html?_x_tr_sl=ja&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp&_x_tr_sch=http",
     "type":"AnimDraw"
     },
 
