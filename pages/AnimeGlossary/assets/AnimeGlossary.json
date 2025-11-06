@@ -19,7 +19,7 @@
     {
     "jp":"​監督",
     "desc":"​director",
-    "link":"",
+    "link":"https://blog.sakugabooru.com/glossary/series-director/",
     "type":"ProductionWorkflow"
     },
 
@@ -27,7 +27,7 @@
     {
     "jp":"総作画監督",
     "desc":"​senior animation director",
-    "link":"",
+    "link":"https://blog.sakugabooru.com/glossary/chief-animation-director/",
     "type":"ProductionWorkflow"
     },
 
@@ -35,7 +35,7 @@
     {
     "jp":"作画監督",
     "desc":"​animation director",
-    "link":"",
+    "link":"https://blog.sakugabooru.com/glossary/animation-direction/",
     "type":"ProductionWorkflow"
     },
 
@@ -43,15 +43,23 @@
     {
     "jp":"演出",
     "desc":"​episode director",
-    "link":"",
+    "link":"https://blog.sakugabooru.com/glossary/episode-direction/",
+    "type":"ProductionWorkflow"
+    },
+    
+    "e-konte":
+    {
+    "jp":"絵コンテ",
+    "desc":"​storyboard",
+    "link":"https://sakuga.fandom.com/wiki/E-konte",
     "type":"ProductionWorkflow"
     },
 
     "settei":
     {
     "jp":"設定",
-    "desc":"model sheet",
-    "link":"",
+    "desc":"concept art, production sketches, character model sheets and other related drawings.",
+    "link":"https://www.sakugabooru.com/wiki/show?title=settei",
     "type":"ProductionWorkflow"
     },
 
@@ -62,12 +70,13 @@
     "link":"",
     "type":"ProductionWorkflow"
     },
-
+    
+    
     "genga":
     {
     "jp":"​原画",
     "desc":"keyframe",
-    "link":"",
+    "link":"https://www.sakugabooru.com/wiki/show?title=genga",
     "type":"ProductionWorkflow"
     },
     
