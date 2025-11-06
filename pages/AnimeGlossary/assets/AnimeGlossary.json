@@ -136,6 +136,30 @@
     "type":"ProductionWorkflow"
     },
     
+    "riteiku":
+    {
+    "jp":"リテイク/R",
+    "desc":"retake",
+    "link":"",
+    "type":"ProductionWorkflow"
+    },
+
+    "sankou /san":
+    {
+    "jp":"参考/参",
+    "desc":"reference",
+    "link":"",
+    "type":"ProductionWorkflow"
+    },
+
+    "katto":
+    {
+    "jp":"CUT / カット",
+    "desc":"shot",
+    "link":"",
+    "type":"ConteTS"
+    },
+
     "action":
     {
     "jp":"A.C",
@@ -152,6 +176,54 @@
     "type":"ConteTS"
     },
 
+    "gyaku shiito":
+    {
+    "jp":"逆シート",
+    "desc":"​reverse frame sequence",
+    "link":"",
+    "type":"ConteTS"
+    },
+
+    "ripiito":
+    {
+    "jp":"​リピート​",
+    "desc":"(repeat) animation loop on the timesheet",
+    "link":"",
+    "type":"ConteTS"
+    },
+
+    "tome":
+    {
+    "jp":"止め​/​止メ",
+    "desc":"​a cel that remains still",
+    "link":"",
+    "type":"ConteTS"
+    },
+    
+    "seru":
+    {
+    "jp":"セル",
+    "desc":"cel",
+    "link":"",
+    "type":"AnimDraw"
+    },
+
+    "shiage":
+    {
+    "jp":"仕上げ",
+    "desc":"coloring of a cel",
+    "link":"https://www.youtube.com/watch?v=-_6-IM2jAFA",
+    "type":"AnimDraw"
+    },
+
+    "koma":
+    {
+    "jp":"コマ",
+    "desc":"​a frame",
+    "link":"",
+    "type":"AnimDraw"
+    },
+
     "bukku":
     {
     "jp":"BOOK",
@@ -160,14 +232,6 @@
     "type":"AnimDraw"
     },
     
-    "katto":
-    {
-    "jp":"CUT / カット",
-    "desc":"shot",
-    "link":"",
-    "type":"AnimDraw"
-    },
-
     "katto bukuro":
     {
     "jp":"カット袋",
@@ -272,21 +336,6 @@
     "type":"AnimDraw"
     },
 
-    "shiage":
-    {
-    "jp":"仕上げ",
-    "desc":"coloring of a cel",
-    "link":"https://www.youtube.com/watch?v=-_6-IM2jAFA",
-    "type":"AnimDraw"
-    },
-
-    "seru":
-    {
-    "jp":"セル",
-    "desc":"cel",
-    "link":"",
-    "type":"AnimDraw"
-    },
 
     "seru bare/seru bare chuui":
     {
@@ -312,13 +361,7 @@
     "type":"AnimDraw"
     },
 
-    "riteiku":
-    {
-    "jp":"リテイク/R",
-    "desc":"retake",
-    "link":"",
-    "type":"AnimDraw"
-    },
+    
 
     "kabuse":
     {
@@ -328,13 +371,7 @@
     "type":"AnimDraw"
     },
 
-    "sankou /san":
-    {
-    "jp":"参考/参",
-    "desc":"reference",
-    "link":"",
-    "type":"AnimDraw"
-    },
+    
 
     "dou tore":
     {
@@ -545,30 +582,6 @@
     "type":"AnimDraw"
     },
 
-    "gyaku shiito":
-    {
-    "jp":"逆シート",
-    "desc":"​reverse frame sequence",
-    "link":"",
-    "type":"AnimDraw"
-    },
-
-    "ripiito":
-    {
-    "jp":"​リピート​",
-    "desc":"(repeat) animation loop on the timesheet",
-    "link":"",
-    "type":"AnimDraw"
-    },
-
-    "tome":
-    {
-    "jp":"止め​/​止メ",
-    "desc":"​a cel that remains still",
-    "link":"",
-    "type":"AnimDraw"
-    },
-
     "buraa":
     {
     "jp":"ブラー",
@@ -581,14 +594,6 @@
     {
     "jp":"合わせ/あわせ",
     "desc":"to match something (for example, match A cel, match the model sheet etc)",
-    "link":"",
-    "type":"AnimDraw"
-    },
-
-    "koma":
-    {
-    "jp":"コマ",
-    "desc":"​a frame",
     "link":"",
     "type":"AnimDraw"
     },
@@ -677,7 +682,7 @@
     "bank cut":
     {
     "jp":"BANK",
-    "desc":"​reuse of cut / cell / background that already been used in different scene",
+    "desc":"​reuse of cut / cel / background that already been used in different scene",
     "link":"https://www.youtube.com/watch?v=Yc0Q6hJg3SQ",
     "type":"EditingComp"
     },
