@@ -13,7 +13,8 @@
 
 
 <script>
-fetch('assets/AnimeGlossary.json')
+//fetch('assets/AnimeGlossary.json')
+fetch('https://raw.githubusercontent.com/traditionalanimatorindonesia/Anime-Glossary/refs/heads/main/AnimeGlossary.json')
 .then(response => response.json())
 .then(data => {
     tb = document.getElementById('tb');
