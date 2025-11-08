@@ -1,12 +1,15 @@
 
-h1,h2,h3{margin:0px;}
-html{-webkit-text-size-adjust:none;font-family: Arial, sans-serif;}
+html{-webkit-text-size-adjust:none;font-family:'Segoe UI','游ゴシック Medium','Yu Gothic Medium','游ゴシック体',YuGothic,'Hiragino Kaku Gothic ProN','メイリオ',Meiryo,sans-serif;}
+
 .social-icon{width:64px;height:64px;}
 .tableA{background-color:rgba(255,255,255,0.7);text-align:center;width:180px;padding-bottom:10px;border-spacing:0;}
 th{background-color:none;color:black;padding:10px;border-spacing:0;}
 button{font-size:17;width:100%;padding:5px;border: 1px solid ;background: #D5FFFF;box-shadow: none;border-radius: 0px;margin-bottom:5px;cursor:pointer;}
 button:hover{opacity:0.5;}
 button:focus {animation:color 0.5s ,scale 0.3s;}
+
+
+
 @keyframes color {
     0%{background: yellow;}
     100%{background: #D5FFFF;}
