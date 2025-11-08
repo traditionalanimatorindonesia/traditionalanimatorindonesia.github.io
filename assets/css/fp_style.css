@@ -257,11 +257,7 @@ padding:6px;
 border-radius:3px;
 box-shadow:4px 4px 4px #ccc
 }
-/*  文字の下の線
------------------------------- */
-/* bodyのfont-sizeを変更したら数値を変更 */
-/* 2.6 = font-size:1.3 x line-height:2 */
-#contents p{
+.underlines{
 padding-bottom:0.1em;
 background-color:#fff;
 background-image:-webkit-linear-gradient(left, #fff 1.1px, rgba(255,255,255,0) 1px), -webkit-linear-gradient(top, #666 1.1px, rgba(120,120,102,0) 1px);
@@ -270,10 +266,6 @@ background-size:2px 2.6rem;
 line-height:2
 }
 
-/* ===================================
-スマホ、タブレット用
-横幅600pxで切り替え
-=================================== */
 
 @media screen and (max-width: 600px){
 body{
