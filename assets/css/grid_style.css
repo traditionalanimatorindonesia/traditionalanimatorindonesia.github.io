@@ -1,18 +1,21 @@
-body{margin-left:5%;margin-right:5%;background-color:#f1f1f1;}
-        .thumbnail{height:200px;background-repeat: no-repeat;background-position: center center;background-size: contain;}
+body{margin-left:5%;margin-right:5%;
+background-color:#f1f1f1;}
+.thumbnail{height:200px;background-repeat: no-repeat;background-position: center center;background-size: contain;}
 * {
   box-sizing: border-box;
+  align-items:center;
 }
 
 /* Float four columns side by side */
 .column {
   float: left;
-  width: 25%;
+  width: 350px;
   padding: 10px 10px;
 }
 
 /* Remove extra left and right margins, due to padding */
-.row {margin: 0 -5px;}
+.row {margin: 0 -5px;
+}
 
 /* Clear floats after the columns */
 .row:after {
@@ -21,27 +24,30 @@ body{margin-left:5%;margin-right:5%;background-color:#f1f1f1;}
   clear: both;
 }
 
-/* Responsive columns */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
+
+h3,h2,h1 {margin-bottom:-5px;}
 
 /* Style the counter cards */
 .card {
   /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
-  padding: 16px;
+  padding: 12px;
   text-align: center;
   border:gray solid 1px;
   border-radius:10px;
   background-color: white;
   height:400px;
 }
-button{width:100%;height:32px;}
 
 form,a {
   display: inline-block;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+	
+    display: block;
+    margin-bottom: 20px;
+  }
 }
