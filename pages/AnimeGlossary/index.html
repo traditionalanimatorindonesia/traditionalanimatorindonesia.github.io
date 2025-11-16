@@ -10,148 +10,299 @@
 </head>
 <body>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anime Glossary</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  #viewToggle {
+    margin-bottom: 15px;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
 
+  /* Table view */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  table td, table th {
+    border: 1px solid #ccc;
+    padding: 8px;
+  }
+  table th {
+    background: #f0f0f0;
+  }
+
+  /* Grid view */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 15px;
+  }
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 12px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  .card h3 {
+    margin: 0 0 8px;
+    font-size: 18px;
+  }
+  .card p {
+    margin: 4px 0;
+    font-size: 14px;
+  }
+  .copy-btn {
+  	font-size:20px;
+    margin-top: 8px;
+    padding: 6px 10px;
+    cursor: pointer;
+  }
+  .num-box {
+    display:inline-block;
+    width:28px;
+    text-align:center;
+    font-weight:bold;
+    border-radius:4px;
+    margin-right:6px;
+  }
+</style>
+<center><h2>Anime Glossary</h2></center>
+<button id="viewToggle">Switch to Grid View</button>
+
+<!-- Table container -->
+<table id="tb">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Romaji</th>
+      <th>Japanese</th>
+      <th>Description</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+<!-- Grid container -->
+<div id="grid" class="grid-container" style="display:none;"></div>
 
 <script>
-//fetch('assets/AnimeGlossary.json')
+function getTypeColor(type){
+  switch(type){
+    case "SpecialTechnique": return "lightgray";
+    case "CameraWork": return "violet";
+    case "EditingComp": return "lightblue";
+    case "ProductionWorkflow": return "yellow";
+    case "AnimDraw": return "red";
+    case "ConteTS": return "lightgreen";
+    default: return "transparent";
+  }
+}
+
 fetch('https://raw.githubusercontent.com/traditionalanimatorindonesia/Anime-Glossary/refs/heads/main/AnimeGlossary.json')
 .then(response => response.json())
 .then(data => {
-    tb = document.getElementById('tb');
-    v = [];
-    numb = 0;
-    for(var i in data){
-        numb += 1;
-        var key = i;
-        var val = data[i];
-        v.push(val["jp"]);
-        idx = v.indexOf(val["jp"]);
-        
-        tr = document.createElement('tr');
-        tb.appendChild(tr);
-        
-        type = document.createElement('td');
-        type.style.width = "20px";
-        type.style.textAlign = "center";
+    const tbBody = document.querySelector('#tb tbody');
+    const grid = document.getElementById('grid');
+    let numb = 0;
+
+    for (let i in data) {
+        numb++;
+        const val = data[i];
+        const bgColor = getTypeColor(val["type"]);
+
+        // --- Table Row ---
+        const tr = document.createElement('tr');
+        tbBody.appendChild(tr);
+
+        const type = document.createElement('td');
         type.innerText = numb;
-
-        if (val["type"] == ""){
-            type.style.backgroundColor = "none";
-        }
-
-        if (val["type"] == "SpecialTechnique"){
-            type.style.backgroundColor = "lightgray";
-        }
-
-        if (val["type"] == "CameraWork"){
-            type.style.backgroundColor = "violet";
-        }
-
-        if (val["type"] == "EditingComp"){
-            type.style.backgroundColor = "lightblue";
-        }
-        
-        if (val["type"] == "ProductionWorkflow"){
-            type.style.backgroundColor = "yellow";
-        }
-
-        if (val["type"] == "AnimDraw"){
-            type.style.backgroundColor = "red";
-        }
-        
-        if (val["type"] == "ConteTS"){
-            type.style.backgroundColor = "lightgreen";
-        }
-    
+        type.style.backgroundColor = bgColor;
         tr.appendChild(type);
 
-        romaji = document.createElement('td');
-        romaji.style.paddingLeft = "5px";
-        tr.appendChild(romaji);
+        const romaji = document.createElement('td');
         romaji.innerText = i;
+        tr.appendChild(romaji);
 
-        td1 = document.createElement('td');
+        const td1 = document.createElement('td');
+        const jpBtn = document.createElement('button');
+        jpBtn.textContent = val["jp"];
+        jpBtn.className = "copy-btn";
+        jpBtn.addEventListener('click', () => {
+          navigator.clipboard.writeText(val["jp"]);
+          //alert("Copied: " + val["jp"]);
+        });
+        td1.appendChild(jpBtn);
         tr.appendChild(td1);
-        
-        td2 = document.createElement('td');
-        td2.style.paddingLeft = "10px";
+
+        const td2 = document.createElement('td');
+        td2.innerText = val["desc"];
         tr.appendChild(td2);
-        
-        td3 = document.createElement('td');
+
+        const td3 = document.createElement('td');
+        if (val["link"]) {
+            const link = document.createElement('a');
+            link.href = val["link"];
+            link.target = "_blank";
+            link.textContent = "Reference";
+            td3.appendChild(link);
+        }
         tr.appendChild(td3);
 
-        jp = document.createElement('button');
-        td1.appendChild(jp);
-        jp.textContent = val["jp"];
-        //jp.style.fontSize = "20px"
-        jp.id = idx;
+        // --- Grid Card ---
+        const card = document.createElement('div');
+        card.className = 'card';
 
-        input = document.createElement('input');
-        xx = String(idx)+"val";
-        input.id = xx;
-        input.type = "text";
-        input.value = v[idx];
-        td1.appendChild(input);
-        input.hidden = true;
+        const numBox = document.createElement('span');
+        numBox.className = 'num-box';
+        numBox.style.backgroundColor = bgColor;
+        numBox.textContent = numb;
 
-        buttons = document.getElementById(idx);
-        buttons.onclick = function() {
-          // Select the text field
-          thisid = String(this.id)+"val";
-          inputVal = document.getElementById(thisid);
-          inputVal.select();
-          inputVal.setSelectionRange(0, 99999);
-          // Copy the text inside the text field
-          navigator.clipboard.writeText(inputVal.value);
-          //alert("Copied the text: " + input.value);
-        };
+        const title = document.createElement('h3');
+        title.textContent = i;
 
-        desc = document.createElement('i');
-        td2.appendChild(desc);
-        desc.innerText = val["desc"];
-        
-        if (val["link"] == "") {}
-        else {
-            link = document.createElement('a');
-            link_btn = document.createElement('button');
-            link.appendChild(link_btn)
+        const jpCardBtn = document.createElement('button');
+        jpCardBtn.textContent = val["jp"];
+        jpCardBtn.className = "copy-btn";
+        jpCardBtn.addEventListener('click', () => {
+          navigator.clipboard.writeText(val["jp"]);
+          alert("Copied: " + val["jp"]);
+        });
 
-            link.setAttribute('href', val["link"]);
-            link.setAttribute('target', '_blank');
+        const desc = document.createElement('p');
+        desc.textContent = val["desc"];
 
-            link_btn.textContent = "Reference"
-            
-            td3.appendChild(link);
-            }
+        card.appendChild(numBox);
+        card.appendChild(title);
+        card.appendChild(jpCardBtn);
+        card.appendChild(desc);
 
+        if (val["link"]) {
+          const refLink = document.createElement('a');
+          refLink.href = val["link"];
+          refLink.target = "_blank";
+          const refBtn = document.createElement('a');
+          refBtn.textContent = "Reference";
+          refLink.appendChild(refBtn);
+          card.appendChild(refLink);
+        }
+        grid.appendChild(card);
     }
-}
-);
 
+    // Auto-switch to grid on mobile
+    if (window.innerWidth <= 768) {
+      document.getElementById('tb').style.display = 'none';
+      grid.style.display = 'grid';
+      document.getElementById('viewToggle').textContent = "Switch to List View";
+    }
+});
+
+// Toggle view manually
+const toggleBtn = document.getElementById('viewToggle');
+toggleBtn.addEventListener('click', () => {
+  const table = document.getElementById('tb');
+  const grid = document.getElementById('grid');
+  if (table.style.display !== 'none') {
+    table.style.display = 'none';
+    grid.style.display = 'grid';
+    toggleBtn.textContent = "Switch to List View";
+  } else {
+    table.style.display = 'table';
+    grid.style.display = 'none';
+    toggleBtn.textContent = "Switch to Grid View";
+  }
+});
 </script>
 
-<style>
-table,tr,td{border-top:1px solid lightgray;border-collapse: collapse;padding-top:5px;padding-bottom:5px;border-spacing:0px;}
-table{width:100%;color:black;background: rgba(255, 255, 255, .8);}
-button{border:1px solid black;color:black;}
 
+
+<footer class="footer">
+  <div class="footer-container">
+    <strong>Sources :</strong>
+    <ul class="footer-links">
+      <li><a target="_blank" href="https://www.youtube.com/playlist?list=PL4dSARM_jX8JfRfuwPWPvv2cjRr-lVDup">Masaaki Iwane : Anime Terms</a></li>
+      <li><a target="_blank" href="https://www.youtube.com/watch?v=Q7mq-ZwtxVw">Dong Chang : Anime Terms</a></li>
+      <li><a target="_blank" href="https://www.youtube.com/playlist?list=PLcK5CzaVPK2lOvbPWL8oK8eY0PMOsKqWO">Dong Chang : Anime Timesheets & Camerawork</a></li>
+      <li><a target="_blank" href="https://gyakusan--enshutsu-site.translate.goog/%E3%82%BF%E3%82%A4%E3%83%A0%E3%82%B7%E3%83%BC%E3%83%88%E8%89%B2%E3%80%85/?_x_tr_sl=ja&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp">gyakusan-enshutsu.site</a></li>
+      <li><a target="_blank" href="https://listeningside-net.translate.goog/a_side00.html?_x_tr_sl=ja&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp&_x_tr_sch=http">listeningside.net</a></li>
+      <li><a target="_blank" href="https://drive.google.com/file/d/1yB2U-OONyAHhFnWsNJhU-R-5-t26YwlY/view">Satsuma! Filming Fundamentals For Animators</a></li>
+      <li><a target="_blank" href="https://animego.erosakuga.com/benkyou/#:~:text=Introduction">Anime GO</a></li>
+    </ul>
+  </div>
+</footer>
+
+<style>
+.footer {
+  background: #f0f0f0;
+  color: black;
+  padding: 20px;
+  text-align: center;
+}
+.footer-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.footer-links {
+	
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+.footer-links li {
+  margin: 0;
+}
+.footer-links a {
+border:1px gray solid;
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #222; /* dark text for contrast */
+  transition: transform 0.2s ease;
+}
+.footer-links a:hover {
+  transform: scale(1.05);
+}
+@media (max-width: 600px) {
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+}
 </style>
 
+<script>
+// Utility: generate random soft/light pastel color
+function randomSoftColor() {
+  const r = Math.floor(Math.random() * 76) + 180; // 180–255
+  const g = Math.floor(Math.random() * 76) + 180;
+  const b = Math.floor(Math.random() * 76) + 180;
+  return `rgb(${r}, ${g}, ${b})`;
+}
 
-<center>
-<h2>Anime Glossary</h2>
-<table id="tb">
-</table>
-<b>Sources :</b><br>
-<a target="_blank" href="https://www.youtube.com/playlist?list=PL4dSARM_jX8JfRfuwPWPvv2cjRr-lVDup">Masaaki Iwane : Anime Terms</a><br>
-<a href="https://www.youtube.com/watch?v=Q7mq-ZwtxVw">Dong Chang : Anime Terms</a><br>
-<a href="https://www.youtube.com/playlist?list=PLcK5CzaVPK2lOvbPWL8oK8eY0PMOsKqWO">Dong Chang : Anime Timesheets & Camerawork</a><br>
-<a href="https://gyakusan--enshutsu-site.translate.goog/%E3%82%BF%E3%82%A4%E3%83%A0%E3%82%B7%E3%83%BC%E3%83%88%E8%89%B2%E3%80%85/?_x_tr_sl=ja&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp">https://gyakusan-enshutsu.site/</a><br>
-<a href="https://listeningside-net.translate.goog/a_side00.html?_x_tr_sl=ja&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp&_x_tr_sch=http">http://listeningside.net</a><br>
-<a href="https://drive.google.com/file/d/1yB2U-OONyAHhFnWsNJhU-R-5-t26YwlY/view">Satsuma! Filming Fundamentals For Animators</a><br>
-<a href="https://animego.erosakuga.com/benkyou/#:~:text=Introduction">Anime GO</a><br>
-
-</center>
+// Apply random background colors to all footer links
+document.querySelectorAll('.footer-links a').forEach(link => {
+  link.style.backgroundColor = randomSoftColor();
+});
+</script>
 
 </body>
 </html>
+
+
