@@ -203,7 +203,7 @@ fetch('https://raw.githubusercontent.com/traditionalanimatorindonesia/Anime-Glos
     if (window.innerWidth <= 768) {
       document.getElementById('tb').style.display = 'none';
       grid.style.display = 'grid';
-      document.getElementById('viewToggle').textContent = "Switch to List View";
+      document.getElementById('viewToggle').textContent = "Switch to Table View";
     }
 });
 
@@ -215,7 +215,7 @@ toggleBtn.addEventListener('click', () => {
   if (table.style.display !== 'none') {
     table.style.display = 'none';
     grid.style.display = 'grid';
-    toggleBtn.textContent = "Switch to List View";
+    toggleBtn.textContent = "Switch to Table View";
   } else {
     table.style.display = 'table';
     grid.style.display = 'none';
