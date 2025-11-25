@@ -1,82 +1,101 @@
 <html>
   <head>
-   <link rel="stylesheet" href="../../assets/css/style.css"> 
-   <script src="../../assets/javascript/jquery.js"></script>
-   <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../assets/css/grid_style.css"> 
+    <script src="../../assets/javascript/jquery.js"></script>
+    <meta charset="UTF-8">
     <meta property="og:title" content="Software Tool" />
     <meta property="og:description" content="Kumpulan tool gratis yang dapat membantu produksi animasi" />
     <meta property="og:image" content="https://traditionalanimatorindonesia.github.io/assets/img/icon.png" />
-    <a href="https://traditionalanimatorindonesia.github.io/"> <img class="home-gif" src="../../assets/img/pupu_walk.gif"></a>
-   </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
     
   <body>
-    <h2>List Tool Gratis</h2>
-    <caption>Kumpulan tool gratis yang dapat membantu produksi animasi</caption><br><br>
+  	<style>
+  	.card{padding:10px;height:auto;}
+  	.platform{font-weight:bold;color:black;}
+  	.grid{
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+      gap: 18px;
+      align-items: start;
+    }
+    
+  	</style>
+    <main class="container">
+    <section class="header">
+      <h1>Tools</h1>
+      <p>Kumpulan tool gratis yang dapat membantu produksi animasi</p>
+    </section>
+    <section class="grid">
+      <article class="card">
+        <h3><a class="btn" href="http://opentoonz.github.io/download/xdts_viewer.html">XDTS Viewer</a></h3>
+        <span class="platform">PC</span>
+        <p>Exchange Digital Time Sheet Viewer</p>
+      </article>
 
-<div class="table_component" role="region" tabindex="0">
-<table>
-    <thead>
-        <tr>
-            <th>Tools</th>
-            <th>Platform</th>
-            <th>Deskripsi</th>
-        </tr>
-    </thead>
-    <tbody>
-        
-        <tr>
-            <td><a href="http://opentoonz.github.io/download/xdts_viewer.html">XDTS Viewer</a></td>
-            <td>PC</td>
-            <td>Exchange Digital Time Sheet Viewer</td>
-        </tr>
-        <tr>
-            <td><a href="https://spikysaurus.github.io/pages/XDTS-Editor/index.html">XDTS Editor</a></td>
-            <td>WEB</td>
-            <td>Exchange Digital Time Sheet Editor</td>
-        </tr>
-        <tr>
-            <td><a href="https://spikysaurus.github.io/pages/ImageSequenceDeduplicator/index.html">Image Sequence Deduplicator</a></td>
-            <td>WEB</td>
-            <td>Tool untuk otomatis menghapus gambar-gambar duplikat yang ada di Image Sequence</td>
-        </tr>
-        <tr>
-            <td><a href="https://www.pureref.com/">Pureref</a></td>
-            <td>PC</td>
-            <td>Reference Image Viewer</td>
-        </tr>
-        <tr>
-            <td><a href="https://mpv.io/">MPV</a></td>
-            <td>PC</td>
-            <td>Video Player yang bisa jump frame-by-frame</td>
-        </tr>
-        <tr>
-            <td><a href="https://play.google.com/store/apps/details?id=app.animationtimer&hl=en">Animation Frames Timer</a></td>
-            <td>Android</td>
-            <td>Timer/Stopwatch</td>
-        </tr>
-        <tr>
-            <td><a href="https://gsw.archinc.jp/">AnimeCraft Stopwatch</a></td>
-            <td>WEB</td>
-            <td>Timer/Stopwatch</td>
-        </tr>
-        <tr>
-            <td><a href="https://wolfinabowl.itch.io/palette-viewer-editor">Palette Viewer-Editor</a></td>
-            <td>PC<br></td>
-            <td>Menampilkan, Mengubah, membuat, dan mengonversi berbagai format palette</td>
-        </tr>
-        <tr>
-            <td><a href="https://wolfinabowl.itch.io/csv-to-xdts-converter">CSV-XDTS Converter</a></td>
-            <td>PC<br></td>
-            <td>Convert file CSV ke XDTS dan sebaliknya<br></td>
-        </tr>
-        <tr>
-            <td><a href="https://wolfinabowl.itch.io/oca-to-xdts-converter">OCA-XDTS Converter</a></td>
-            <td>PC<br></td>
-            <td>Convert file OCA ke XDTS dan sebaliknya</td>
-        </tr>
-    </tbody>
-</table>
-</div>
+      <article class="card">
+        <h3><a class="btn" href="https://spikysaurus.github.io/pages/XDTS-Editor/index.html">XDTS Editor</a></h3>
+        <span class="platform">WEB</span>
+        <p>Exchange Digital Time Sheet Editor</p>
+      </article>
 
+      <article class="card">
+        <h3><a class="btn" href="https://spikysaurus.github.io/pages/ImageSequenceDeduplicator/index.html">Image Sequence Deduplicator</a></h3>
+        <span class="platform">WEB</span>
+        <p>Tool untuk otomatis menghapus gambar-gambar duplikat yang ada di Image Sequence</p>
+      </article>
+
+      
+
+      <article class="card">
+        <h3><a class="btn" href="https://animedirectorstopwatch.netlify.app">Anime Director Stopwatch</a></h3>
+        <span class="platform">WEB</span>
+        <p>Timer/Stopwatch</p>
+      </article>
+
+      <article class="card">
+        <h3><a class="btn" href="https://play.google.com/store/apps/details?id=app.animationtimer&hl=en">Animation Frames Timer</a></h3>
+        <span class="platform">Android</span>
+        <p>Timer/Stopwatch</p>
+      </article>
+
+      <article class="card">
+        <h3><a class="btn" href="https://gsw.archinc.jp/">Anime Craft Stopwatch</a></h3>
+        <span class="platform">WEB</span>
+        <p>Timer/Stopwatch</p>
+      </article>
+
+      <article class="card">
+        <h3><a class="btn" href="https://wolfinabowl.itch.io/palette-viewer-editor">Palette Viewer-Editor</a></h3>
+        <span class="platform">PC</span>
+        <p>Menampilkan, Mengubah, membuat, dan mengonversi berbagai format palette</p>
+      </article>
+
+      <article class="card">
+        <h3><a class="btn" href="https://wolfinabowl.itch.io/csv-to-xdts-converter">CSV-XDTS Converter</a></h3>
+        <span class="platform">PC</span>
+        <p>Convert file CSV ke XDTS dan sebaliknya</p>
+     </article>
+
+      <article class="card">
+        <h3><a class="btn" href="https://wolfinabowl.itch.io/oca-to-xdts-converter">OCA-XDTS Converter</a></h3>
+        <span class="platform">PC</span>
+        <p>Convert file OCA ke XDTS dan sebaliknya</p>
+      </article>
+      
+      <article class="card">
+        <h3><a class="btn" href="https://www.pureref.com/">Pureref</a></h3>
+        <span class="platform">PC</span>
+        <p>Reference Image Viewer</p>
+      </article>
+
+      <article class="card">
+        <h3><a class="btn" href="https://mpv.io/">MPV</a></h3>
+        <span class="platform">PC</span>
+        <p>Video Player yang bisa jump frame-by-frame</p>
+      </article>
+      </section>
+    </main>
   </body>
 </html>
+
