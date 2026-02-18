@@ -15,7 +15,7 @@ html{
 font-size:62.5%
 }
 body{
-background:#fff; /* 背景 */
+background:white; /* 背景 */
 color:#000; /* 文字色 */
 font-size:1.3em; /* 文字の大きさ */
 line-height:1.5;
@@ -56,7 +56,6 @@ header {
 padding:10px 0
 }
 #contents{
-padding:10px;
 margin:0 auto;
 text-align:left;
 line-height:20px
@@ -74,10 +73,12 @@ text-align:right
 =================================== */
 
 #menu {
-margin:0 auto;
-width:100%
 }
+
+
 nav li {
+border:2px black solid;
+border-radius:10px;
 display:inline-block;
 margin:5px;
 position:relative;
@@ -93,6 +94,7 @@ transform:translate(-50%,-50%);
 width:100px
 }
 nav li a {
+
 color:#000;
 display:block;
 height:100px;width:100px
@@ -100,80 +102,21 @@ height:100px;width:100px
 nav li a:hover{
 color:#fff
 }
-.color1{background:url(../../assets/image/01.png) no-repeat 50% 50%}
-.color2{background:url(../../assets/image/02.png) no-repeat 50% 50%}
-.color3{background:url(../../assets/image/03.png) no-repeat 50% 50%}
-.color4{background:url(../../assets/image/04.png) no-repeat 50% 50%}
-.color5{background:url(../../assets/image/05.png) no-repeat 50% 50%}
-.color6{background:url(../../assets/image/06.png) no-repeat 50% 50%}
-.color7{background:url(../../assets/image/07.png) no-repeat 50% 50%}
-.color8{background:url(../../assets/image/08.png) no-repeat 50% 50%}
-.color9{background:url(../../assets/image/09.png) no-repeat 50% 50%}
+.color1{background-color:#acedf2;}
+.color2{background-color:#f2b3ac;}
+.color3{background-color:#dfe6a4;}
+.color4{background-color:#e6a4be;}
+.color5{background-color:#c8f2ac;}
+.color6{background-color:#e6cba4;}
+.color7{background-color:#e6a4e0;}
 
-/* ===================================
-index
-=================================== */
-
-.index{
-font-weight:700;
-margin:0 auto;
-padding:10px 0;
-width:330px /* 1列のメニューの数x110 */
-}
-.index a{
-color:#000
-}
-.indexbox{
-float:left;
-margin:5px;
-text-align:center;
-height:100px;width:100px;
-line-height:100px 
-}
-
-/* ===================================
-ページ上部へのリンク、著作権表示
-=================================== */
-
-/* 位置はscroll.jsで設定
------------------------------- */
-#pagetop {
-background:rgba(198,198,198,.8);/* 背景 */
-color:#fff;/* 色 */
-height:60px;width:60px; /* 大きさ */
-border-radius:5px;
-box-sizing:border-box;
-display:block;
-line-height:22px;
-padding-top:30px;
-position:fixed;
-text-align:center;
-z-index:10
-}
-#pagetop:before {
-content:'\25B2';
-font-size:20px;
-position:absolute;
-left:0;top:10px;
-width:100%
-}
-#pagetop:hover{
-background:rgba(198,198,198,.5)
-}
-
-/* ===================================
-見出し、枠、線
-=================================== */
 
 h1{
 font-size:1.3em;
-margin:0 0 .5em 
+margin:0 0 .5em ;
 }
 h2{
-border-bottom:1px solid;
 font-size:1.3em;
-margin:20px 0;
-text-shadow:0 1px 2px #ccc
 }
 h3{
 background:#ccc;
@@ -299,18 +242,17 @@ width:auto
 dd{
 margin-left:20px
 }
-/*  画像の縮小表示
------------------------------- */
+
 img{
 max-width:100%;
 height:auto
 }
-/*  文字の下の線
------------------------------- */
-/* bodyのfont-sizeを変更したら数値を変更 */
-/* 2.8 = font-size:1.5 x line-height:2 */
+
+
 #contents p{
 background-size:2px 3rem;
 line-height:2
 }
 }
+
+.group{margin-bottom:10px;background-color:white;padding:10px;border-radius:10px;border:2px solid black;}
