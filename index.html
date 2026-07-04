@@ -11,76 +11,175 @@
 <title>Traditional Animator Indonesia</title>
 <link rel="stylesheet" href="assets/css/fp_style.css" type="text/css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+<link rel="stylesheet" href="assets/bl-icons/bl-icons.css">
 
 </head>
 <body>
 <div id="wrapper">
 
 <header>
-<!--
-<img width="700px" src="assets/img/banner.png">
--->
+<center>
+    <img width="700px" src="assets/img/banner.png">
+</center>
 
-<a target="_blank" href="https://www.youtube.com/playlist?list=PLcK5CzaVPK2mmpfTp2wgsDhtE4Qub5aIT"><img src="assets/img/fp_lomba.gif"></a>
-<a target="_blank" href="https://www.instagram.com/ramadhanimasi/"><img src="assets/img/fp_ramadhanimasi.webp"></a>
- 
+<style>
+.container {
+  display: flex;
+  gap: 20px;              /* space between panels */
+}
 
-<div id="menu">
-	
-<nav class="cf">
-<ul>
-<li class="color1"><a href="pages/Pipeline/index.html"><span>Pipeline</span></a>
-<li class="color2"><a href="pages/ListSoftware/index.html"><span>Software<br>Animasi</span></a>
-<li class="color3"><a href="pages/Downloads/index.html"><span>Project<br>Files</span></a>
-<li class="color4"><a href="pages/Templates/index.html"><span>Templates</span></a>
-<li class="color5"><a href="pages/AnimeGlossary/index.html"><span>Anime<br>Glossary</span></a>
-<li class="color6"><a href="pages/ListTool/index.html"><span>Tools</span></a>
-<li class="color7"><a href="pages/ListWebsite/index.html"><span>Website<br>Referensi</span></a>
-</ul>
+.left-panel,
+.right-panel {
+  flex: 1;                /* equal width for both sides */
+  min-height: 400px;      /* give some height */
+   border:1px gray solid;
+padding:12px;
+}
 
-</nav>
+.left-panel {
+  background: #fff;
+}
+
+.right-panel {
+  background: #f9f9f9;    /* subtle blank background */
+  border-radius: 6px;
+}
+
+.file-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;        /* multiple rows */
+  gap: 15px;
+}
+
+.file-list li {
+  flex: 1 1 120px;        /* each item minimum width */
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+.file-list li:hover {
+  background: #e6f0ff;
+}
+
+.file-list li span {
+  margin-right: 8px;
+  font-size: 18px;
+  color: #f4b400;
+}
+
+.file-list li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
 
 
+
+</style>
+<div class="container">
+  <div class="left-panel">
+    <ul class="file-list">
+      <li>
+        <span class="bl-icons-file_folder"></span>
+        <a href="pages/Pipeline/index.html">Pipeline</a>
+      </li>
+      <li>
+        <span class="bl-icons-file_folder"></span>
+        <a href="pages/ListSoftware/index.html">Software Animasi</a>
+      </li>
+      <li>
+        <span class="bl-icons-file_folder"></span>
+        <a href="pages/Downloads/index.html">Animation Samples</a>
+      </li>
+      <li>
+        <span class="bl-icons-file_folder"></span>
+        <a href="pages/Templates/index.html">Templates</a>
+      </li>
+      <li>
+        <span class="bl-icons-file_folder"></span>
+        <a href="pages/AnimeGlossary/index.html">Anime Glossary</a>
+      </li>
+      <li>
+        <span class="bl-icons-file_folder"></span>
+        <a href="pages/ListTool/index.html">Tools</a>
+      </li>
+      <li>
+        <span class="bl-icons-file_folder"></span>
+        <a href="pages/ListWebsite/index.html">Website Referensi</a>
+      </li>
+    </ul>
+  </div>
+  <div class="right-panel">
+    <div class="group">
+    <h2>Tentang</h2>
+    <p class="underlines">
+    Traditional Animator Indonesia</b> adalah Online Group, Dimana kita memposting karya Animasi 2D dengan teknik hand-drawn (Frame by Frame).
+    <br>
+    </p>
+    <table >
+                        
+                        <tr >
+                            <td >Gabung Group</td>
+                            <td>
+      <a target="_blank" class="sns_" href="https://www.facebook.com/groups/traditionalanimatorindonesia/">
+      <span class="fa fa-facebook"></span> Facebook</a>
+                            </td>
+                            <td>
+                                <a target="_blank" class="sns_" href="https://discord.gg/4TMUsSzZyV ">
+    <span class="fa fa-institution"></span> Discord</a>
+                            </td>
+                            
+                        </tr>
+                    <tr>
+                        <td>Media Sosial</td>
+                            <td>
+                                <a target="_blank" class="sns_" href="https://www.instagram.com/traditionalanimatorindonesia/">
+    <span class="fa fa-instagram"></span> Instagram</a>
+                            </td>
+                            <td>
+                                <a target="_blank" class="sns_" href="https://www.youtube.com/@TraditionalAnimatorIndonesia">
+    <span class="fa fa-youtube"></span> Youtube</a>
+                            </td>
+                        </tr>
+                    </table>
+    </div>
+
+<div class="group" style="display:none;">
+<h2>Artikel</h2>
+<p id="List">Belum ada</p>
 </div>
+
+    <div class="group">
+    <h2>History Event</h2>
+    <p class="underlines">
+    (10 Desember 2025 - 15 Februari 2026) <a target="_blank" href="https://www.youtube.com/playlist?list=PLcK5CzaVPK2mmpfTp2wgsDhtE4Qub5aIT">Short Animation Contest</a><br>
+    (10 Oktober 2025) Website Traditional Animator Indonesia dibuat<br>
+    (17 Desember 2023) <a target="_blank" href="https://youtu.be/eDjAcR7bhVw?t=5362">CF17 Meetup (Husain Untoro & GitsAsh Panel)</a>
+    <br>
+    (15 Oktober 2022) <a target="_blank" href="https://www.youtube.com/watch?v=Zmgl-kbvYo4&list=PLcK5CzaVPK2k3U911kyHZCECQW3LmML1y">Workshop : Husain Untoro </a>
+    <br>
+    (16 April 2022) Group Traditional Animator Indonesia dibuat
+    </p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
 </header>
 <style>.social-icon{width:24px;height:24px;margin-top:5px;}
 button{text-align:center;}</style>
 <div id="main-wrap"><div id="contents">
 
-<div class="group">
-<h2>Tentang</h2>
-<p class="underlines">
-Traditional Animator Indonesia</b> adalah Online Group, Dimana kita memposting karya Animasi 2D dengan teknik hand-drawn (Frame by Frame).
-<br>
-</p>
-<table >
-                    
-                    <tr >
-                        <td >Gabung Group</td>
-                        <td>
-  <a target="_blank" class="sns_" href="https://www.facebook.com/groups/traditionalanimatorindonesia/">
-  <span class="fa fa-facebook"></span> Facebook</a>
-                        </td>
-                        <td>
-                            <a target="_blank" class="sns_" href="https://discord.gg/4TMUsSzZyV ">
-<span class="fa fa-institution"></span> Discord</a>
-                        </td>
-                        
-                    </tr>
-                <tr>
-                    <td>Media Sosial</td>
-                        <td>
-                            <a target="_blank" class="sns_" href="https://www.instagram.com/traditionalanimatorindonesia/">
-<span class="fa fa-instagram"></span> Instagram</a>
-                        </td>
-                        <td>
-                            <a target="_blank" class="sns_" href="https://www.youtube.com/@TraditionalAnimatorIndonesia">
-<span class="fa fa-youtube"></span> Youtube</a>
-                        </td>
-                    </tr>
-                </table>
-</div>
 
 
 <script>
@@ -130,35 +229,21 @@ Traditional Animator Indonesia</b> adalah Online Group, Dimana kita memposting k
     
 
 </script>
-<div class="group">
-<h2>Artikel</h2>
-<p id="List">Belum ada</p>
-</div>
 
-<div class="group">
-<h2>History</h2>
-<p class="underlines">
-(10 Desember 2025 - 15 Februari 2026) <a target="_blank" href="https://www.youtube.com/playlist?list=PLcK5CzaVPK2mmpfTp2wgsDhtE4Qub5aIT">Short Animation Contest</a><br>
-(10 Oktober 2025) Website Traditional Animator Indonesia dibuat<br>
-(17 Desember 2023) <a target="_blank" href="https://youtu.be/eDjAcR7bhVw?t=5362">CF17 Meetup (Husain Untoro & GitsAsh Panel)</a>
-<br>
-(15 Oktober 2022) <a target="_blank" href="https://www.youtube.com/watch?v=Zmgl-kbvYo4&list=PLcK5CzaVPK2k3U911kyHZCECQW3LmML1y">Workshop : Husain Untoro </a>
-<br>
-(16 April 2022) Group Traditional Animator Indonesia dibuat
-</p>
-</div>
 
-<div class="group">
+
+
+<!--div class="group">
 <h2>Lain-lain</h2>
 <p class="underlines">
 <a target="_blank" href="https://www.animation-festivals.com/?sfid=3358&_sfm_country=Indonesia">Festival Film #1</a>
 <a target="_blank" href="https://asianfilmfestivals.com/">Festival Film #2</a>
 <a target="_blank" href="https://docs.google.com/spreadsheets/d/1eR2oAXOuflr8CZeGoz3JTrsgNj3KuefbdXJOmNtjEVM/edit?gid=0#gid=0">Job Postings (Internasional)</a>
 </p>
-</div
+</div-->
 
 <center>
-<img style="width:100%;border:2px solid black;border-radius:10px;" src="assets/img/walks.webp">
+<!--img style="width:100%;border:2px solid black;border-radius:10px;" src="assets/img/walks.webp"-->
 
 <!--"Our drill will open a hole in the universe! And that hole will be a path for those behind us! The dreams of those who've fallen! The hopes of those who'll follow! Those two sets of dreams weave together into a double helix! Drilling a path towards tomorrow! We are Traditional Animator Indonesia! Our drill is the drill.. that creates the heavens!!!"-->
 </center>

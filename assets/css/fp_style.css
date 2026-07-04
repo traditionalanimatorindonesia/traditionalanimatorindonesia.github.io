@@ -22,28 +22,6 @@ line-height:1.5;
 letter-spacing:.1em;
 padding:20px 20px 80px;
 text-align:center
-}
-a{
-color:inherit
-}
-#contents a:not(.bg-none){
-background:#c1f3f7;
-border-radius:5px;
-color:#000;
-display:inline-block;
-margin:0;
-transition:.5s
-}
-#contents a:not(.bg-none):hover{
-background:#f6bcd3
-}
-#contents a.bg-none{
-text-decoration:underline
-}
-
-/* ===================================
-基本
-=================================== */
 
 #wrapper{
 margin:0 auto
@@ -71,45 +49,6 @@ text-align:right
 /* ===================================
 メニュー 
 =================================== */
-
-#menu {
-}
-
-
-nav li {
-border:2px black solid;
-border-radius:10px;
-display:inline-block;
-margin:5px;
-position:relative;
-overflow:hidden
-}
-nav li span {
-position:absolute;
-text-align:center;
-top:50%;left:50%;
--ms-transform:translate(-50%,-50%);
--webkit-transform:translate(-50%,-50%);
-transform:translate(-50%,-50%);
-width:100px
-}
-nav li a {
-
-color:#000;
-display:block;
-height:100px;width:100px
-}
-nav li a:hover{
-color:#fff
-}
-.color1{background-color:#acedf2;}
-.color2{background-color:#f2b3ac;}
-.color3{background-color:#dfe6a4;}
-.color4{background-color:#e6a4be;}
-.color5{background-color:#c8f2ac;}
-.color6{background-color:#e6cba4;}
-.color7{background-color:#e6a4e0;}
-
 
 h1{
 font-size:1.3em;
@@ -224,16 +163,7 @@ background-size:auto 100%;
 height:60px;width:60px;
 line-height:30px
 }
-nav li span {
-width:100px
-}
-nav li a {
-height:100px;width:100px
-}
-.color1,.color2,.color3,.color4,.color5,.color6,.color7,.color8,.color9{
--moz-background-size:auto 100%;
-background-size:auto 100%
-}
+
 dt{
 float:none;
 clear:none;
@@ -255,4 +185,4 @@ line-height:2
 }
 }
 
-.group{margin-bottom:10px;background-color:white;padding:10px;border-radius:10px;border:2px solid black;}
+.group{margin-bottom:10px;background-color:white;padding:10px;border-radius:10px;border:1px dashed black;}
